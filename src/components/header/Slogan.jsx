@@ -1,6 +1,7 @@
+import { SloganStyled } from "./Header.styled";
 const Slogan = () => {
   return (
-    <div>
+    <SloganStyled>
       <h1>Кожен запит важливий!</h1>
       <p>
         Ми - надійний посередник, який спрощує процес відбору та співпраці,
@@ -8,7 +9,7 @@ const Slogan = () => {
         команда прагне об'єднати зусилля військових, волонтерів та людей, які
         донатять.
       </p>
-    </div>
+    </SloganStyled>
   );
 };
 export default Slogan;

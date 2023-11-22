@@ -1,12 +1,13 @@
+import { NavStyled } from "./Nav.styled";
 const Nav = () => {
   return (
     <div>
-      <ul>
+      <NavStyled>
         <li>Хто ми</li>
         <li>Як це працює</li>
         <li>Ініціативи</li>
         <li>Фонди</li>
-      </ul>
+      </NavStyled>
     </div>
   );
 };

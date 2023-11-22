@@ -1,17 +1,18 @@
 import Nav from "../nav/Nav";
 import logo from "../img/LOGO green.svg";
 import Slogan from "./Slogan";
+import { HeaderStyled, HeaderWrapper } from "./Header.styled";
 const Header = () => {
   return (
-    <>
-      <div>
+    <HeaderWrapper>
+      <HeaderStyled>
         <img src={logo} alt="logo" />
         <Nav />
-      </div>
+      </HeaderStyled>
       <div>
         <Slogan />
       </div>
-    </>
+    </HeaderWrapper>
   );
 };
 export default Header;
