@@ -3,14 +3,14 @@ import styled from "@emotion/styled";
 export const FooterWrapper = styled.div`
   font-family: "e-Ukraine-Regular", serif;
   position: relative;
-  max-width: 1376px; 
-  height: 810px;
+  max-width: 1440px; 
+  height: 906px;
   margin: 0 auto; 
   padding-top: 64px;
   padding-bottom: 32px;
   padding-left: 32px;
   padding-right: 32px;
-  background: #0d0d0d;
+  background: ${props => props.theme.colors.Text_Main};
   display: flex; 
   flex-direction: column;
   justify-content: flex-start;
@@ -38,12 +38,11 @@ export const InfoPartner = styled.div`
 
 export const TextPartner = styled.p`
   width: 332px;
-  color: #FFF;
-  font-family: e-Ukraine;
+  color: ${props => props.theme.colors.White};
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
-  line-height: 92%;
+  line-height: 30px;
   white-space: pre-line;
   text-align: left;
 `
@@ -55,8 +54,7 @@ export const InfoContact = styled.div`
   gap: 32px;
 `
 export const TextInfo = styled.p`
-  color: #FFF;
-  font-family: e-Ukraine;
+  color: ${props => props.theme.colors.White};
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -74,8 +72,7 @@ export const InfoMail = styled.div`
 `
 
 export const TextContact = styled.p`
-  color: #FFF;
-  font-family: e-Ukraine;
+  color: ${props => props.theme.colors.White};
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -89,11 +86,10 @@ export const WorkingBtn = styled.button`
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  border: 1px solid #FFF;
-  background: #FFF;
+  border: 1px solid ${props => props.theme.colors.White};
+  background: ${props => props.theme.colors.White};
 
-  color: #0D0D0D;
-    font-family: e-Ukraine;
+  color: ${props => props.theme.colors.Text_Main};
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -109,15 +105,13 @@ export const LableFoot = styled.div`
 `
 
 export const CopyText = styled.p`
-  font-family: "e-Ukraine-Regular", serif;
   text-align: center;
-  color: #fff;
+  color: ${props => props.theme.colors.White};
   font-size: 14px;
 `;
 
 export const LableText = styled.p`
-  font-family: "e-Ukraine-Regular", serif;
-  color: #fff;
+  color: ${props => props.theme.colors.White};
   font-size: 14px;
   width: 332px;
   text-align: left;
