@@ -3,4 +3,5 @@
   max-width: 1440px;
   margin: auto;
   background-color: #ededed;
+  box-sizing: border-box; 
 }

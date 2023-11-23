@@ -4,9 +4,9 @@ import styled from "@emotion/styled";
 export const PageStyled = styled.div`
   width: 1144px;
   margin: auto;
-  padding: 25px;
+  /* padding: 25px; */
   border-radius: 16px;
-  background-color: ${props => props.theme.colors.White};
+
 `;
 
 export const NavWrapper = styled.div`
@@ -62,4 +62,10 @@ export const Button = styled.button`
   border: none;
   cursor: pointer;
   border-radius: 6px;
+`;
+
+export const HeroWrapper = styled.div`
+  background-color: ${props => props.theme.colors.White};
+  padding: 25px; 
+  border-radius: 8px 8px 0px 0px;
 `;
