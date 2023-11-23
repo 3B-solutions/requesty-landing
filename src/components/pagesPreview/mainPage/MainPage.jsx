@@ -13,6 +13,7 @@ import {
   NavWrapper,
   MainText,
   Button,
+  HeroWrapper,
 } from "./MainPage.styled";
 const MainPage = () => {
   return (
@@ -34,7 +35,7 @@ const MainPage = () => {
           </Nav>
         </NavWrapper>
       </HeaderSyle>
-      <div>
+      <HeroWrapper>
         <MainText>Разом до перемоги!</MainText>
         <CardWrapper>
           <RoleCard>
@@ -56,7 +57,7 @@ const MainPage = () => {
             <Button>Підтримати</Button>
           </RoleCard>
         </CardWrapper>
-      </div>
+      </HeroWrapper>
           <MainSection></MainSection>
     </PageStyled>
   );

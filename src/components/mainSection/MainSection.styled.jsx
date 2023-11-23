@@ -1,13 +1,7 @@
 import styled from "@emotion/styled";
 
-export const HeaderStyled = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding: 32px;
-  margin-bottom: 32px;
-`;
-
 export const MainWrapper = styled.div`
+  width: 100%;
   padding: 64px 32px 94px 32px;
   background-color: ${(props) => props.theme.colors.BG_Secondary};
   width: 100%;
@@ -16,6 +10,23 @@ export const MainWrapper = styled.div`
   position: relative; */
 `;
 
+// .scroll-container {
+//   width: 100%;
+//   height: 100%;
+//   overflow: auto;
+//   scrollbar-width: thin; /* Задає тонкий скролбар у Firefox */
+//   scrollbar-color: transparent transparent; /* Задає тонкий скролбар у Firefox */
+//   -ms-overflow-style: none; /* Ховає скролбар у Internet Explorer та Edge */
+// }
+
+// .scroll-container::-webkit-scrollbar {
+//   width: 12px; /* Задає ширину скролбара для Chrome та Safari */
+// }
+
+// .scroll-container::-webkit-scrollbar-thumb {
+//   background-color: transparent; /* Задає фон для пальця скролбара для Chrome та Safari */
+// }
+
 export const StickyContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -23,10 +34,32 @@ export const StickyContainer = styled.div`
   height: 100vh;
   overflow-y: scroll;
   position: relative;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  -ms-overflow-style: none;
+
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  -ms-overflow-style: none;
+
+  /* Додає кастомний скролбар для Firefox */
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
 `;
 
 export const StickyElement = styled.div`
-  flex-grow: 1;
+  width: 33.33%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -35,13 +68,13 @@ export const StickyElement = styled.div`
   margin-bottom: 32px;
 `;
 export const StickyContent = styled.div`
-  flex-grow: 3;
+  width: 66.66%;
   padding: 16px;
   height: 400px;
 `;
 export const ContentBox = styled.div`
   display: flex;
-  width: 448px;
+  width: 50%;
   padding: 16px;
   flex-direction: column;
   justify-content: center;
