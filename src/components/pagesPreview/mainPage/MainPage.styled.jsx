@@ -1,11 +1,12 @@
 import styled from "@emotion/styled";
 
+
 export const PageStyled = styled.div`
   width: 1144px;
   margin: auto;
   padding: 25px;
   border-radius: 16px;
-  background-color: #ffffff;
+  background-color: ${props => props.theme.colors.White};
 `;
 
 export const NavWrapper = styled.div`
@@ -22,7 +23,7 @@ export const CardWrapper = styled.div`
   justify-content: center;
   gap: 16px;
   padding: 32px;
-  background-color: #ededed;
+  background-color: ${props => props.theme.colors.Light_Gray_2};
   border-radius: 16px;
 `;
 export const RoleCard = styled.div`
@@ -34,7 +35,7 @@ export const RoleCard = styled.div`
   height: 320px;
   width: 338px;
   padding: 25px;
-  background-color: #ffffff;
+  background-color: ${props => props.theme.colors.White};
   border-radius: 16px;
 `;
 
@@ -56,8 +57,8 @@ export const MainText = styled.h2`
 export const Button = styled.button`
   width: 288px;
   height: 44px;
-  color: #ffffff;
-  background: #0d0d0d;
+  color: ${props => props.theme.colors.White};
+  background: ${props => props.theme.colors.Text_Main};
   border: none;
   cursor: pointer;
   border-radius: 6px;

@@ -2,6 +2,7 @@ import emoji1 from "../../img/emoji1.jpg";
 import emoji2 from "../../img/emoji2.jpg";
 import emoji3 from "../../img/emoji3.jpg";
 import logo from "../../img/LOGO green.svg";
+import MainSection from "../../mainSection/MainSection";
 import {
   CardWrapper,
   RoleCard,
@@ -56,6 +57,7 @@ const MainPage = () => {
           </RoleCard>
         </CardWrapper>
       </div>
+          <MainSection></MainSection>
     </PageStyled>
   );
 };
