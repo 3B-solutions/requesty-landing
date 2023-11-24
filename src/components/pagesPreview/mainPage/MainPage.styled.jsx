@@ -23,7 +23,7 @@ export const CardWrapper = styled.div`
   justify-content: center;
   gap: 16px;
   padding: 32px;
-  background-color: ${props => props.theme.colors.Light_Gray_2};
+  background-color: ${props => props.theme.colors.BG_Secondary};
   border-radius: 16px;
 `;
 export const RoleCard = styled.div`
