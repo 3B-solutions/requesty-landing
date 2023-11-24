@@ -4,6 +4,7 @@ import { theme } from './theme';
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import Footer from "./components/footer/Footer";
+import Oportunity from "components/oportunity/Oportunity";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className="App">
         <Header />
         <Hero />
+        <Oportunity />
         <Footer />
       </div>
     </ThemeProvider>
