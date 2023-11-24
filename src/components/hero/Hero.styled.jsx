@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const HeroWrapper = styled.div`
-  font-family: "e-Ukraine-Regular", serif;
+  font-family: "e-Ukraine-Regular", sans-serif;
   padding-top: 10px;
   position: relative;
 `;

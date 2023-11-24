@@ -10,23 +10,6 @@ export const MainWrapper = styled.div`
   position: relative; */
 `;
 
-// .scroll-container {
-//   width: 100%;
-//   height: 100%;
-//   overflow: auto;
-//   scrollbar-width: thin; /* Задає тонкий скролбар у Firefox */
-//   scrollbar-color: transparent transparent; /* Задає тонкий скролбар у Firefox */
-//   -ms-overflow-style: none; /* Ховає скролбар у Internet Explorer та Edge */
-// }
-
-// .scroll-container::-webkit-scrollbar {
-//   width: 12px; /* Задає ширину скролбара для Chrome та Safari */
-// }
-
-// .scroll-container::-webkit-scrollbar-thumb {
-//   background-color: transparent; /* Задає фон для пальця скролбара для Chrome та Safari */
-// }
-
 export const StickyContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -39,7 +22,6 @@ export const StickyContainer = styled.div`
   scrollbar-color: transparent transparent;
   -ms-overflow-style: none;
 
-  
   ::-webkit-scrollbar-thumb {
     background-color: transparent;
   }
@@ -66,13 +48,28 @@ export const StickyElement = styled.div`
   padding: 50px;
   font-size: 20px;
   margin-bottom: 32px;
+  height: fit-content;
 `;
 export const StickyContent = styled.div`
+  display: flex;
   width: 66.66%;
   padding: 16px;
-  height: 400px;
+  height: fit-content;
 `;
 export const ContentBox = styled.div`
+  display: flex;
+  width: 50%;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 16px;
+  text-align: left;
+  height: fit-content;
+`;
+
+export const ContentBoxWhite = styled.div`
   display: flex;
   width: 50%;
   padding: 16px;
@@ -82,11 +79,77 @@ export const ContentBox = styled.div`
   gap: 16px;
   border-radius: 16px;
   background: ${(props) => props.theme.colors.BG_Main};
+  height: fit-content;
 `;
+
 export const InputStyled = styled.input`
   padding: 16px;
-  width: 384px;
+  width: 100%;
   border: none;
   border-radius: 8px;
   background: ${(props) => props.theme.colors.BG_Secondary};
+`;
+
+export const BorderedBox = styled.div`
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 18px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid ${(props) => props.theme.colors.Text_Main};
+`;
+export const StyledButton = styled.button`
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  color: ${(props) => props.theme.colors.White};
+  font-size: 100%;
+  line-height: 1.15;
+  border: none;
+  cursor: pointer;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    cursor: zoom-in;
+  }
+`;
+export const BunnonsContainer = styled.div`
+  display: flex;
+  gap: 16px;
+  justify-content: start;
+  align-items: baseline;
+`;
+export const GrayBox = styled.div`
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: ${(props) => props.theme.colors.BG_Secondary};
+`;
+export const WhiteBox = styled.div`
+  display: flex;
+  padding: 8px;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: ${(props) => props.theme.colors.White};
+`;
+
+export const InfoTxt = styled.p`
+  color: ${(props) => props.theme.colors.Text_Main};
+  font-family: 'e-Ukraine';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 18px */
+  letter-spacing: 0.24px;
 `;
