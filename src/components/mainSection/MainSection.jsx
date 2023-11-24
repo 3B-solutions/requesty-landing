@@ -1,3 +1,5 @@
+import CollaborationConfirmed from "./CollaborationConfirmed";
+import FoundVolunteer from "./FoundVolunteer";
 import {
   BunnonsContainer,
   MainWrapper,
@@ -5,9 +7,8 @@ import {
   StickyElement,
 } from "./MainSection.styled";
 import MakingRequest from "./MakingRequest";
-import FoundVolunteer from "./FoundVolunteer";
 import RequestDone from "./RequestDone";
-import CollaborationConfirmed from "./CollaborationConfirmed";
+
 
 const MainSection = () => {
   return (

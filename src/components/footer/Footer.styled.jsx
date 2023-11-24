@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const FooterWrapper = styled.div`
-  font-family: "e-Ukraine-Regular", serif;
+  font-family: "e-Ukraine-Regular", sans-serif;
   position: relative;
   max-width: 1440px; 
   height: 906px;

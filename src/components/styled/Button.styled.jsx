@@ -24,7 +24,7 @@ export const Button = styled.button`
     border: 1px solid ${(props) => props.theme.colors.Button};
     color: ${(props) => props.theme.colors.Button};
 
-    font-family: e-Ukraine;
+    font-family: "e-Ukraine-Regular", sans-serif;;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;

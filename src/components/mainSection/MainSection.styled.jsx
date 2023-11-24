@@ -146,7 +146,7 @@ export const WhiteBox = styled.div`
 
 export const InfoTxt = styled.p`
   color: ${(props) => props.theme.colors.Text_Main};
-  font-family: e-Ukraine;
+  font-family: 'e-Ukraine';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
