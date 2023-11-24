@@ -1,36 +1,30 @@
 import {
-  ContentBox,
-  InputStyled,
+  BunnonsContainer,
   MainWrapper,
   StickyContainer,
-  StickyContent,
   StickyElement,
 } from "./MainSection.styled";
+import MakingRequest from "./MakingRequest";
+import FoundVolunteer from "./FoundVolunteer";
+import RequestDone from "./RequestDone";
+import CollaborationConfirmed from "./CollaborationConfirmed";
 
 const MainSection = () => {
   return (
     <MainWrapper>
-      <div>Main section</div>
+      <BunnonsContainer>
+        <h2>Як це працює</h2>
+        <p>Етапи формування та закриття запиту</p>
+      </BunnonsContainer>
       <StickyContainer>
         <StickyElement>Sticky Element 1</StickyElement>
-        <StickyContent>
-          <ContentBox>
-            <h3>Заповни запит</h3>
-            <InputStyled type="text" placeholder="Інформація особи" />
-            <InputStyled type="text" placeholder="Інформація запиту" />
-          </ContentBox>
-          <ContentBox>
-            <h3>Військовий реєструется та заповнює заявку</h3>
-          </ContentBox>
-        </StickyContent>
+        <MakingRequest />
         <StickyElement>Sticky Element 2</StickyElement>
-        <StickyContent>
-          <p>Sticky Content 2</p>
-        </StickyContent>
+        <FoundVolunteer />
         <StickyElement>Sticky Element 3</StickyElement>
-        <StickyContent>
-          <p>Sticky Content 3</p>
-        </StickyContent>
+        <CollaborationConfirmed/>
+        <StickyElement>Element ??</StickyElement>
+        <RequestDone />
       </StickyContainer>
     </MainWrapper>
   );
