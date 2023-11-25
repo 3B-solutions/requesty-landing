@@ -19,7 +19,7 @@ const Footer = () => {
                 </TextInfo>
                 <InfoMail>
                     <TextContact>+38066030309</TextContact>
-                    <TextContact>Nazva@gmail.com</TextContact>
+                    <TextContact>requestyua@gmail.com</TextContact>
                 </InfoMail>
                 <WorkingBtn>Співпраця</WorkingBtn>
             </InfoContact>

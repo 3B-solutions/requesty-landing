@@ -22,17 +22,17 @@ export const FixedText = styled.div`
   display: inline-flex;
   margin-bottom: 32px;
   margin-right: 124px;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    gap: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 16px;
 `;
 
 export const FundsTitle = styled.h2`
   color: ${props => props.theme.colors.Text_Main};
   font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
   line-height: 28px;
   letter-spacing: -0.96px;
   text-align: flex-start;
@@ -41,8 +41,8 @@ export const FundsTitle = styled.h2`
 export const FundsTexts = styled.p`
   color: ${props => props.theme.colors.Text_Main};
   font-size: 16px;
-font-style: normal;
-font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.32px;
   text-align: start;
@@ -54,35 +54,39 @@ export const ScrollableContent = styled.div`
   overflow-x: hidden; 
   padding-top: 16.8px;
   padding-bottom: 0px;
-  padding-left: 16.8px;
-  padding-right: 16.8px;
   width: 756px;
-    min-height: 451.5px;
-    max-height: 451.5px;
-    flex-shrink: 0;
-    border-radius: 8px 8px 0px 0px;
-    border: 1px solid ${props => props.theme.colors.White};
-    background: ${props => props.theme.colors.White};
+  min-height: 451.5px;
+  max-height: 451.5px;
+  flex-shrink: 0;
+  border-radius: 8px 8px 0px 0px;
+  border: 1px solid ${props => props.theme.colors.White};
+  background: ${props => props.theme.colors.White}; /* Змінено фон на білий */
 
-    &::-webkit-scrollbar {
-        width: 12px; /* Ширина повзунка */
-      }
-    
-      &::-webkit-scrollbar-thumb {
-        background-color: transparent; /* Колір повзунка */
-      }
-    
-      &::-webkit-scrollbar-track {
-        background-color: transparent; /* Колір фону повзунка */
-      }
+  &::-webkit-scrollbar {
+    width: 0.2px; /* Ширина повзунка */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
 `;
 
+export const HeadWrap = styled.div`
+    padding-left: 16.8px;
+    padding-right: 3.2px;
+`
+
 export const LogoWrap = styled.div`
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-left: 13.2px;
-    gap: 130px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 30px;
+  gap: 230px;
+  
 `;
 
 export const NavWrapper = styled.div`
@@ -91,7 +95,7 @@ export const NavWrapper = styled.div`
 `;
 
 export const Nav = styled.ul`
-  font-size: 10px;
+  font-size: 6.3px;
   font-style: normal;
   font-weight: 400;
   display: flex;
@@ -113,7 +117,7 @@ export const Nav = styled.ul`
 `;
 
 export const NavSimple = styled.ul`
-  font-size: 10px;
+  font-size: 6.3px;
   font-style: normal;
   font-weight: 400;
   display: flex;
@@ -121,71 +125,123 @@ export const NavSimple = styled.ul`
   line-height: 18px;
   letter-spacing: 0.24px;
   position: relative;
-
 `;
 
 export const MainInfo = styled.div`
-    margin-top: 48px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 170px;
+  margin-top: 48px;
+  margin-bottom: 68px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 320px;
 `;
 
 export const TitleInfo = styled.div`
-    align-items: flex-start;
-    justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
 `;
 
 export const TitleFunds = styled.h2`
   color: ${props => props.theme.colors.Text_Main};
-  font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 44.16px;
-    letter-spacing: -0.96px;
+  font-size: 25.2px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44.16px;
+  letter-spacing: -0.96px;
 `;
 
 export const TextInfo = styled.div`
-    display: flex; 
-    flex-direction: column;
-    max-width: 100%;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 26px;
+  display: flex; 
+  flex-direction: column;
+  max-width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 26px;
 `;
 
 export const TextsParag = styled.p`
-    max-width: 100%; 
-    font-size: 14px;
+  max-width: 100%; 
+  font-size: 8.4px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
-    margin: 0;
-    padding: 0; 
-    margin-bottom: 16px;   
-`
+    line-height: 12.6px;
+    letter-spacing: 0.168px;
+  margin: 0;
+  padding: 0; 
+  margin-bottom: 16px;   
+`;
 
 export const ButtonInfo = styled.button`
-    display: inline-flex;
-    padding: 8.4px 16.8px;
-    cursor: pointer;
-    gap: 5.25px;
-    border-radius: 4.2px;
-    border: 0.525px solid ${props => props.theme.colors.Text_Main};
-    background: ${props => props.theme.colors.Text_Main};
-    color: ${props => props.theme.colors.BG_Main};
-    font-size: 8px;
+  display: inline-flex;
+  padding: 8.4px 16.8px;
+  cursor: pointer;
+  gap: 5.25px;
+  border-radius: 4.2px;
+  border: 0.525px solid ${props => props.theme.colors.Text_Main};
+  background: ${props => props.theme.colors.Text_Main};
+  color: ${props => props.theme.colors.BG_Main};
+  font-size: 6.3px;
     font-style: normal;
-    line-height: 18px;
-    letter-spacing: 0.24px;
-`
+    font-weight: 400;
+    line-height: 9.45px;
+    letter-spacing: 0.126px;
+`;
 
 export const FundsParts = styled.div`
-    margin-top: 80px;
-    flex-grow: 1;
-    height: 693.525px;
-    flex-shrink: 0;
-    background: #ECEEF2;
+  min-height: 600px;
+  background: #ECEEF2;
+  padding-bottom: 16.8px;
+`;
+
+export const FundList = styled.ul`
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 16px 8.4px;
+    flex-wrap: wrap;
+    justify-content: center;
 `
+
+export const FundPart = styled.li`
+    display: flex;
+    width: 357px;
+    padding: 16.8px;
+    gap: 16.8px;
+    flex-shrink: 0;
+    border-radius: 8.4px;
+    background: ${props => props.theme.colors.White};
+`
+
+export const FundLook = styled.div`
+    display: flex; 
+    flex-direction: row;
+    gap: 16.8px;
+`;
+
+export const FundDescr = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 8.4px;
+`
+
+export const NameFund = styled.h3`
+    align-self: stretch;
+    color: #000;
+    font-size: 12.6px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15.12px;
+`;
+
+export const ShortDescr = styled.p`
+    color: #000;
+    font-size: 8.4px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12.6px;
+    letter-spacing: 0.168px; 
+`;

@@ -1,11 +1,13 @@
-import { FundsWrapper, FixedText, ScrollableContent, TextsParag, FundsTitle, FundsTexts, LogoWrap, NavWrapper, Nav, NavSimple, MainInfo, TitleInfo, TextInfo, TitleFunds, ButtonInfo, FundsParts } from "./Funds.styled";
+import { FundsWrapper, FundLook, FixedText, ScrollableContent, FundDescr, TextsParag, FundsTitle, FundsTexts, HeadWrap, LogoWrap, NavWrapper, Nav, NavSimple, MainInfo, TitleInfo, TextInfo, TitleFunds, ButtonInfo, FundsParts, FundList, FundPart, NameFund, ShortDescr } from "./Funds.styled";
 import logo from "../../img/LOGO green.svg";
+import fund from "../../img/fundImg.jpg";
 
 const Funds = () => {
 
   return (
     <>
     <FundsWrapper>
+   
       <FixedText>
         <FundsTitle>
             Фонди
@@ -15,6 +17,7 @@ const Funds = () => {
         </FundsTexts>
       </FixedText>
       <ScrollableContent>
+        <HeadWrap>
             <LogoWrap>
             <img src={logo} alt="logo" height={18} width={93} />
             <NavWrapper>
@@ -48,15 +51,117 @@ const Funds = () => {
                         </ButtonInfo>
                 </TextInfo>
             </MainInfo>
+            </HeadWrap>
             <FundsParts>
-                <Nav>
-                    <li>Збори</li>
-                    <li>Фонди</li>
-                    <li>Петиції</li>
-                    <li>Волонтери</li>
-                    <li>Ініціативи</li>
-                    <li>Мої запити</li>
-                </Nav>
+                <FundList>
+                    <FundPart>
+                        <FundLook>
+                            <img src={fund} alt="fund" />
+                            <FundDescr>
+                                <NameFund>Фонд “Допомога військовим”</NameFund>
+                                <ShortDescr>Фонд волонтерів - це некомерційна організація, яка об'єднує волонтерів та залучає їх для виконання...</ShortDescr>
+                            </FundDescr>
+                        </FundLook>
+                    </FundPart>
+                    <FundPart>
+                        <FundLook>
+                            <img src={fund} alt="fund" />
+                            <FundDescr>
+                                <NameFund>Фонд “Допомога військовим”</NameFund>
+                                <ShortDescr>Фонд волонтерів - це некомерційна організація, яка об'єднує волонтерів та залучає їх для виконання...</ShortDescr>
+                            </FundDescr>                        </FundLook>
+                    </FundPart>
+                    <FundPart>
+                        <FundLook>
+                            <img src={fund} alt="fund" />
+                            <FundDescr>
+                                <NameFund>Фонд “Допомога військовим”</NameFund>
+                                <ShortDescr>Фонд волонтерів - це некомерційна організація, яка об'єднує волонтерів та залучає їх для виконання...</ShortDescr>
+                            </FundDescr>                        
+                        </FundLook>
+                    </FundPart>
+                    <FundPart>
+                        <FundLook>
+                            <img src={fund} alt="fund" />
+                            <FundDescr>
+                                <NameFund>Фонд “Допомога військовим”</NameFund>
+                                <ShortDescr>Фонд волонтерів - це некомерційна організація, яка об'єднує волонтерів та залучає їх для виконання...</ShortDescr>
+                            </FundDescr>                        
+                        </FundLook>
+                    </FundPart>
+                    <FundPart>
+                        <FundLook>
+                            <img src={fund} alt="fund" />
+                            <FundDescr>
+                                <NameFund>Фонд “Допомога військовим”</NameFund>
+                                <ShortDescr>Фонд волонтерів - це некомерційна організація, яка об'єднує волонтерів та залучає їх для виконання...</ShortDescr>
+                            </FundDescr>                        
+                        </FundLook>
+                    </FundPart>
+                    <FundPart>
+                        <FundLook>
+                            <img src={fund} alt="fund" />
+                            <FundDescr>
+                                <NameFund>Фонд “Допомога військовим”</NameFund>
+                                <ShortDescr>Фонд волонтерів - це некомерційна організація, яка об'єднує волонтерів та залучає їх для виконання...</ShortDescr>
+                            </FundDescr>                        
+                        </FundLook>
+                    </FundPart>
+                    <FundPart>
+                        <FundLook>
+                            <img src={fund} alt="fund" />
+                            <FundDescr>
+                                <NameFund>Фонд “Допомога військовим”</NameFund>
+                                <ShortDescr>Фонд волонтерів - це некомерційна організація, яка об'єднує волонтерів та залучає їх для виконання...</ShortDescr>
+                            </FundDescr>                        
+                        </FundLook>
+                    </FundPart>
+                    <FundPart>
+                        <FundLook>
+                            <img src={fund} alt="fund" />
+                            <FundDescr>
+                                <NameFund>Фонд “Допомога військовим”</NameFund>
+                                <ShortDescr>Фонд волонтерів - це некомерційна організація, яка об'єднує волонтерів та залучає їх для виконання...</ShortDescr>
+                            </FundDescr>                        
+                        </FundLook>
+                    </FundPart>
+                    <FundPart>
+                        <FundLook>
+                            <img src={fund} alt="fund" />
+                            <FundDescr>
+                                <NameFund>Фонд “Допомога військовим”</NameFund>
+                                <ShortDescr>Фонд волонтерів - це некомерційна організація, яка об'єднує волонтерів та залучає їх для виконання...</ShortDescr>
+                            </FundDescr>                        
+                        </FundLook>
+                    </FundPart>
+                    <FundPart>
+                        <FundLook>
+                            <img src={fund} alt="fund" />
+                            <FundDescr>
+                                <NameFund>Фонд “Допомога військовим”</NameFund>
+                                <ShortDescr>Фонд волонтерів - це некомерційна організація, яка об'єднує волонтерів та залучає їх для виконання...</ShortDescr>
+                            </FundDescr>                        
+                        </FundLook>
+                    </FundPart>
+                    <FundPart>
+                        <FundLook>
+                            <img src={fund} alt="fund" />
+                            <FundDescr>
+                                <NameFund>Фонд “Допомога військовим”</NameFund>
+                                <ShortDescr>Фонд волонтерів - це некомерційна організація, яка об'єднує волонтерів та залучає їх для виконання...</ShortDescr>
+                            </FundDescr>                        
+                        </FundLook>
+                    </FundPart>
+                    <FundPart>
+                        <FundLook>
+                            <img src={fund} alt="fund" />
+                            <FundDescr>
+                                <NameFund>Фонд “Допомога військовим”</NameFund>
+                                <ShortDescr>Фонд волонтерів - це некомерційна організація, яка об'єднує волонтерів та залучає їх для виконання...</ShortDescr>
+                            </FundDescr>                        
+                        </FundLook>
+                    </FundPart>
+                </FundList>
             </FundsParts>
       </ScrollableContent>
       </FundsWrapper>
