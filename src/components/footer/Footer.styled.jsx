@@ -85,6 +85,7 @@ export const WorkingBtn = styled.button`
   padding: 16px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   border-radius: 8px;
   border: 1px solid ${props => props.theme.colors.White};
   background: ${props => props.theme.colors.White};
@@ -95,6 +96,11 @@ export const WorkingBtn = styled.button`
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.24px;
+
+    &:hover {
+        animation: jelly 0.5s;
+        background: ${props => props.theme.colors.Light_Gray_2};
+      }
 `
 
 export const LableFoot = styled.div`

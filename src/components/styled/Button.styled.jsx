@@ -21,6 +21,21 @@ export const Button = styled.button`
     background: transparent;
     border: 1px solid ${(props) => props.theme.colors.Text_Main};
   }
+  &.smallSize {
+    padding: 5.25px 10.5px;
+    justify-content: center;
+    align-items: center;
+    gap: 5.25px;
+    font-size: 6.3px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 9.45px;
+    letter-spacing: 0.126px;
+    border-radius: 4.2px;
+    color: ${(props) => props.theme.colors.Text_Main};
+    background: transparent;
+    border: 0.525px solid ${(props) => props.theme.colors.Text_Main};
+  }
   &.borderedLight {
     padding: 8px 16px;
     width: fit-content;
