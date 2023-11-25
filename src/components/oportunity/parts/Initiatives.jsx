@@ -14,7 +14,7 @@ const Inits = () => {
         Ініціативи
         </InitsTitle>
         <InitsTexts>
-        Різні волонтери не тільки допомагають проте і створюють щось. Ми дамо змогу їм розповісти про себе.
+        Волонтери не лише шукають, але й створюють щось. Ми дамо їм можливість розповісти про себе.
         </InitsTexts>
       </FixedText>
       <ScrollableContent>
@@ -26,9 +26,7 @@ const Inits = () => {
                     <li>Збори</li>
                     <li>Фонди</li>
                     <li>Петиції</li>
-                    <li>Волонтери</li>
                     <li>Ініціативи</li>
-                    <li>Мої запити</li>
                 </Nav>
                 <NavSimple>
                     <li>Увійти</li>
@@ -44,11 +42,11 @@ const Inits = () => {
                 </TitleInfo>
                 <TextInfo>
                     <TextsParag>
-                    Долучайтесь до волонтерської ініціативи,<br/> 
-                    якщо ви щось створюєте.
+                    Нехай всі дізнаються чим ви допомагаєте<br/> 
+                    нашим воїнам.
                     </TextsParag>
                         <ButtonInfo>
-                            Доєднатись
+                        Розмістити ініціативу 
                         </ButtonInfo>
                 </TextInfo>
             </MainInfo>
@@ -88,7 +86,7 @@ const Inits = () => {
                     <InitPart>
                         <InitLook>
                             <InitDescr>
-                                <NameInit>Повербанки для ЗСУ</NameInit>
+                                <NameInit>Поживні батончики</NameInit>
                                 <Button className="smallSize" type="button">Перейти</Button>
                             </InitDescr> 
                             <ShortDescr>Внести зміни до Закону України "Про запобігання корупції" щодо видатків на оплату праці найманих працівників для обслуговування домоволодінь та земельних ділянок. А як там, в країнах ЄС? </ShortDescr>
@@ -103,7 +101,7 @@ const Inits = () => {
                     <InitPart>
                     <InitLook>
                             <InitDescr>
-                                <NameInit>Маскувальні сітки</NameInit>
+                                <NameInit>Окопні свічки</NameInit>
                                 <Button className="smallSize" type="button">Перейти</Button>
                             </InitDescr> 
                             <ShortDescr>Внести зміни до Закону України "Про запобігання корупції" щодо видатків на оплату праці найманих працівників для обслуговування домоволодінь та земельних ділянок. А як там, в країнах ЄС? </ShortDescr>

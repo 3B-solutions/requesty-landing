@@ -25,9 +25,7 @@ const Petitions = () => {
                     <li>Збори</li>
                     <li>Фонди</li>
                     <li>Петиції</li>
-                    <li>Волонтери</li>
                     <li>Ініціативи</li>
-                    <li>Мої запити</li>
                 </Nav>
                 <NavSimple>
                     <li>Увійти</li>
@@ -43,11 +41,11 @@ const Petitions = () => {
                 </TitleInfo>
                 <TextInfo>
                     <TextsParag>
-                    Додайте петицію про <br/> 
-                    дійсно важливе.
+                    Додайте петицію, якщо вона<br/> 
+                    пов’язана з військовими.
                     </TextsParag>
                         <ButtonInfo>
-                            Доєднатись
+                        Додати петицію
                         </ButtonInfo>
                 </TextInfo>
             </MainInfo>
