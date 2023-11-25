@@ -85,7 +85,7 @@ export const LogoWrap = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
   padding-left: 30px;
-  gap: 230px;
+  gap: 345px;
   
 `;
 
