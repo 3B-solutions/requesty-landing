@@ -1,4 +1,4 @@
-import { BorderedBox, BunnonsContainer, ContentBox, ContentBoxWhite, InputStyled, StickyContent, StyledButton } from "./MainSection.styled";
+import { BorderedBox, BunnonsContainer, ContentBox, ContentBoxWhite, InputStyled, MainSectionSubTitle, MainSectionTxt, StickyContent, StyledButton } from "./MainSection.styled";
 import AddIcon from "../img/AddIcon.svg";
 import { Button } from "../styled/Button.styled";
 const MakingRequest = () => {
@@ -6,7 +6,7 @@ const MakingRequest = () => {
     <>
         <StickyContent>
           <ContentBoxWhite>
-            <h3>Заповни запит</h3>
+            <MainSectionSubTitle>Заповни запит</MainSectionSubTitle>
             <InputStyled type="text" placeholder="Інформація особи" />
             <InputStyled type="text" placeholder="Інформація запиту" />
             <BorderedBox>
@@ -28,11 +28,11 @@ const MakingRequest = () => {
             </BunnonsContainer>
           </ContentBoxWhite>
           <ContentBox>
-            <h3>Військовий реєструется та заповнює заявку</h3>
-            <p>
+            <MainSectionSubTitle>Військовий реєструется та заповнює заявку</MainSectionSubTitle>
+            <MainSectionTxt>
               Є велика кількість бригад мало відомих для широго загалу. від
               цього і малі охоплення на зборах
-            </p>
+            </MainSectionTxt>
           </ContentBox>
         </StickyContent>
     </>

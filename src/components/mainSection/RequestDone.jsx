@@ -3,6 +3,11 @@ import {
   ContentBox,
   ContentBoxWhite,
   StickyContent,
+  MainSectionSubTitle,
+  MainSectionTxt,
+  InfoTxt,
+  TxtLineWrapper,
+  SummInfo
 } from "./MainSection.styled";
 import Dron from "../img/Dron.png";
 import { Button } from "../styled/Button.styled";
@@ -11,32 +16,32 @@ const RequestDone = () => {
     <>
       <StickyContent>
         <ContentBoxWhite>
-          <div>
-            <h3>Три дрона DJI Mavic 3 </h3>
-            <Button className="borderedLight" type="button">
+          <BunnonsContainer>
+            <MainSectionSubTitle>Три дрона DJI Mavic 3 </MainSectionSubTitle>
+            <Button className="borderedLight right" type="button">
               Дрони
             </Button>
-          </div>
+          </BunnonsContainer>
           <div>
             <img src={Dron} alt="add" width={"100%"} />
           </div>
-          <div>
-            <div>
-              <p>Зiбранно</p>
-              <p>13 200 ₴</p>
-              <p>(5%)</p>
-            </div>
-            <div>
-              <p>Ціль</p>
-              <p>264 000₴</p>
-            </div>
-          </div>
+          <BunnonsContainer>
+            <TxtLineWrapper>
+              <InfoTxt>Зiбранно</InfoTxt>
+              <SummInfo>13 200 ₴</SummInfo>
+              <InfoTxt>(5%)</InfoTxt>
+            </TxtLineWrapper>
+            <TxtLineWrapper className="right">
+              <InfoTxt>Ціль</InfoTxt>
+              <SummInfo>264 000 ₴</SummInfo>
+            </TxtLineWrapper>
+          </BunnonsContainer>
           <div>progress line</div>
-          <p>
+          <InfoTxt>
             DJI - Mavic 3! 🚁 Нам життєво необхідно робити скиди. Нажаль
             минулого місяця ми втратили вже 3 штуки через ворожий реб, тому
             потребуємо терміново нові дрони для розвідки та знищення ворогів.
-          </p>
+          </InfoTxt>
           <BunnonsContainer>
             <Button type="button">Донат</Button>
             <Button className="bordered" type="button">
@@ -45,11 +50,11 @@ const RequestDone = () => {
           </BunnonsContainer>
         </ContentBoxWhite>
         <ContentBox>
-          <h3>Волонтер відкриває збір</h3>
-          <p>
+          <MainSectionSubTitle>Волонтер відкриває збір</MainSectionSubTitle>
+          <MainSectionTxt>
             Заповниши карточку збору, прописавши ціль та опис відкриває збір на
             платформі
-          </p>
+          </MainSectionTxt>
 
         </ContentBox>
       </StickyContent>

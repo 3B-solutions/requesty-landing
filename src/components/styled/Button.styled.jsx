@@ -11,6 +11,11 @@ export const Button = styled.button`
   color: ${(props) => props.theme.colors.White};
   cursor: pointer;
   width: 100%;
+  &.small {
+    padding: 8px 12px;
+    width: fit-content;
+    margin: 0 auto;
+  }
   &.bordered {
     color: ${(props) => props.theme.colors.Text_Main};
     background: transparent;
@@ -30,6 +35,9 @@ export const Button = styled.button`
     font-weight: 400;
     line-height: 150%; /* 18px */
     letter-spacing: 0.24px;
+  }
+  &.right {
+    margin-left: auto;
   }
 
   &:hover {
