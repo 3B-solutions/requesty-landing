@@ -10,6 +10,13 @@ export const Button = styled.button`
   background: ${(props) => props.theme.colors.Text_Main};
   color: ${(props) => props.theme.colors.White};
   cursor: pointer;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
   width: 100%;
   &.small {
     padding: 8px 12px;
@@ -29,7 +36,7 @@ export const Button = styled.button`
     border: 1px solid ${(props) => props.theme.colors.Button};
     color: ${(props) => props.theme.colors.Button};
 
-    font-family: "e-Ukraine-Regular", sans-serif;;
+    font-family: "e-Ukraine-Regular", sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -38,10 +45,6 @@ export const Button = styled.button`
   }
   &.right {
     margin-left: auto;
-  }
-
-  &:hover {
-    /* animation: jelly 0.5s; */
   }
 
   &.totop {

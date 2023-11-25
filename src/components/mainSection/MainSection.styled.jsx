@@ -187,8 +187,7 @@ export const StyledButton = styled.button`
 
   &:hover {
     cursor: pointer;
-    transform: scale(1.2);
-    cursor: zoom-in;
+    transform: scale(1.1);
   }
 `;
 export const BunnonsContainer = styled.div`
