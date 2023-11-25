@@ -1,13 +1,15 @@
 import { SectionWrapper, Title } from "./Oportunity.styled";
 import Funds from "./parts/Funds";
+import Inits from "./parts/Initiatives";
+import Petitions from "./parts/Petitions";
 const Oportunity = () => {
   return (
     <>
       <SectionWrapper>
         <Title>Також ви можете</Title>
         <Funds/>
-        {/* <Initiatives/> */}
-        {/* <Petitions/> */}
+        <Inits/>
+        <Petitions/>
       </SectionWrapper>
     </>
   );

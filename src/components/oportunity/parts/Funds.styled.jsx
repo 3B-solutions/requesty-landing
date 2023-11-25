@@ -167,6 +167,7 @@ export const TextsParag = styled.p`
     font-weight: 400;
     line-height: 12.6px;
     letter-spacing: 0.168px;
+    text-align: justify;
   margin: 0;
   padding: 0; 
   margin-bottom: 16px;   

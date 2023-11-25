@@ -13,6 +13,7 @@ export const SectionWrapper = styled.div`
   background: ${props => props.theme.colors.Button};
   display: flex; 
   flex-direction: column;
+  gap: 64px;
 `;
 
 export const Title = styled.h1`
@@ -23,5 +24,4 @@ export const Title = styled.h1`
   line-height: 44px;
   letter-spacing: -0.96px;
   text-align: center;
-  margin-bottom: 64px;
 `;
