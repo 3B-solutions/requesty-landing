@@ -30,8 +30,7 @@ const MakingRequest = () => {
           <ContentBox>
             <MainSectionSubTitle>Військовий реєструется та заповнює заявку</MainSectionSubTitle>
             <MainSectionTxt>
-              Є велика кількість бригад мало відомих для широго загалу. від
-              цього і малі охоплення на зборах
+              Є велика кількість бригад мало відомих для широго загалу. З цієї причини і малі охоплення на зборах.
             </MainSectionTxt>
           </ContentBox>
         </StickyContent>

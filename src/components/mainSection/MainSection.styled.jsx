@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { mediaSizes } from 'components/constants/media';
 
 export const MainWrapper = styled.div`
   width: 100%;
@@ -18,6 +19,11 @@ export const TitleWrapper = styled.div`
   display: flex;
   align-items: start;
   margin-bottom: 64px;
+  @media screen and (max-width: ${mediaSizes.mobile}) {
+    margin-bottom: 100px;
+    flex-direction: column;
+    gap: 32px;
+  }
 `;
 
 export const MainSectionTitle = styled.h2`
@@ -114,6 +120,13 @@ export const StickyElementBox = styled.div`
   justify-content: start;
 `;
 
+export const StickyIMGThumb = styled.div`
+  width: 108px;
+  height: 108px;
+  border-radius: 8px;
+  overflow: hidden;
+`;
+
 export const StickyContent = styled.div`
   display: flex;
   width: 70%;
@@ -145,6 +158,10 @@ export const ContentBoxWhite = styled.div`
   border-radius: 16px;
   background: ${(props) => props.theme.colors.BG_Main};
   height: fit-content;
+  &.last {
+    background: ${(props) => props.theme.colors.BG_Secondary};
+    flex-direction: row;
+  }
 `;
 
 export const InputStyled = styled.input`
@@ -186,8 +203,7 @@ export const StyledButton = styled.button`
 
   &:hover {
     cursor: pointer;
-    transform: scale(1.2);
-    cursor: zoom-in;
+    transform: scale(1.1);
   }
 `;
 export const BunnonsContainer = styled.div`
@@ -259,6 +275,7 @@ export const ScreenWrapper = styled.div`
   gap: 16px; */
   background-color: ${(props) => props.theme.colors.White};
   border-radius: 20px;
+  border: 1px solid ${(props) => props.theme.colors.Button};
   width: 216px;
   height: 400px;
   padding: 10px;
