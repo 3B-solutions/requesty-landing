@@ -1,17 +1,20 @@
 import Nav from "../nav/Nav";
 import logo from "../img/LOGO green.svg";
 import Slogan from "./Slogan";
-import { HeaderStyled, HeaderWrapper } from "./Header.styled";
+import { Link } from "react-scroll";
+import { HeaderStyled, HeaderWrapper, SloganWrapper } from "./Header.styled";
 const Header = () => {
   return (
-    <HeaderWrapper>
+    <HeaderWrapper id="weare">
       <HeaderStyled>
-        <img src={logo} alt="logo" />
+        <Link to="weare" smooth duration={600} style={{ cursor: "pointer" }}>
+          <img src={logo} alt="logo" />
+        </Link>
         <Nav />
       </HeaderStyled>
-      <div>
+      <SloganWrapper>
         <Slogan />
-      </div>
+      </SloganWrapper>
     </HeaderWrapper>
   );
 };

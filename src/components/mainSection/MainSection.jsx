@@ -23,7 +23,7 @@ import Donater_Small from "../img/vector-donater.jpg";
 
 const MainSection = () => {
   return (
-    <MainWrapper>
+    <MainWrapper id="howitworks">
       <TitleWrapper>
         <MainSectionTitle>Як це працює</MainSectionTitle>
         <MainSectionInfo>Етапи формування та закриття запиту</MainSectionInfo>

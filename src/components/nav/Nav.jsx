@@ -1,46 +1,19 @@
 import { NavStyled } from "./Nav.styled";
-
-import Scroll from "react-scroll";
+import { Link } from "react-scroll";
 
 const Nav = () => {
-  const ScrollLink = Scroll.ScrollLink;
   return (
-    <div>
-      <NavStyled>
-        <nav>
-          <ScrollLink
-            to="example-destination"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="some-class"
-            activeClass="some-active-class"
-          >
-            Хто ми
-          </ScrollLink>
-          <ScrollLink
-            to="example-destination"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="some-class"
-            activeClass="some-active-class"
-          >
-            Як це працює
-          </ScrollLink>
-          <ScrollLink
-            to="example-destination"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="some-class"
-            activeClass="some-active-class"
-          >
-            Додаткові можливості
-          </ScrollLink>
-        </nav>
-      </NavStyled>
-    </div>
+    <NavStyled>
+      <Link to="weoffer" smooth duration={600} style={{ cursor: "pointer" }}>
+        Ми пропонуємо
+      </Link>
+      <Link to="howitworks" smooth duration={500} style={{ cursor: "pointer" }}>
+        Як це працює
+      </Link>
+      <Link to="oportunity" smooth duration={500} style={{ cursor: "pointer" }}>
+        Інші можливості
+      </Link>
+    </NavStyled>
   );
 };
 export default Nav;
