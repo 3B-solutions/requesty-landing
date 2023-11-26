@@ -5,6 +5,7 @@ import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import Main from "components/main/Main.jsx";
 import Footer from "./components/footer/Footer";
+import Oportunity from "components/oportunity/Oportunity";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Hero />
         <Main />
+        <Oportunity />
         <Footer />
       </div>
     </ThemeProvider>
