@@ -10,7 +10,6 @@ import {
   InfoMail,
   LableFoot,
   CopyText,
-  LableText,
 } from "./Footer.styled";
 import FooterImg from "../img/FooterImg.png";
 const Footer = () => {
@@ -38,7 +37,6 @@ const Footer = () => {
           </InfoContact>
         </FootInfo>
         <LableFoot>
-          <LableText>Requesty</LableText>
           <CopyText>
             Copyright &copy; 2023 Requesty. All rights reserved
           </CopyText>

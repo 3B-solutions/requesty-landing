@@ -6,3 +6,53 @@
   font-family: 'e-Ukraine-Regular', sans-serif;
   position: relative;
 }
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ECEEF2;
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+  align-content: center;
+}
+
+.ReactModal__Content p {
+  font-family: "e-Ukraine-Regular", sans-serif;
+  margin-bottom: 10px;
+  padding: 10px;
+
+}
+
+.ReactModal__Content button {
+  font-family: "e-Ukraine-Regular", sans-serif;
+  padding: 5px;
+  cursor: pointer;
+  background-color: #0D0D0D;
+  color: #FAFBFC;
+  border: none;
+  border-radius: 4px;
+}
+
+.ReactModal__Content button:hover {
+  background-color: #FAFBFC;
+  color: #0D0D0D;
+
+}

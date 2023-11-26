@@ -8,11 +8,13 @@ import Footer from "./components/footer/Footer";
 import Oportunity from "components/oportunity/Oportunity";
 import Safety from "components/safety/Safety";
 import ScrollToTop from "react-scroll-to-top";
+import Popup from "components/popup/Popup";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
+        <Popup />
         <Header />
         <Hero />
         <Main />

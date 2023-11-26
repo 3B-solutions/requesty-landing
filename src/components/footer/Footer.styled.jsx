@@ -12,7 +12,7 @@ export const FooterWrapper = styled.div`
   background: ${(props) => props.theme.colors.Text_Main};
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   gap: 64px;
 `;
@@ -22,10 +22,11 @@ export const FootImg = styled.img`
 `;
 
 export const FootInfo = styled.div`
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: space-around;
   gap: 364px;
 `;
 
@@ -106,7 +107,7 @@ export const LableFoot = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 364px;
+  /* gap: 600px; */
 `;
 
 export const CopyText = styled.p`
