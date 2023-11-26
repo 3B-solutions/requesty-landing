@@ -22,7 +22,7 @@ import Donater_Small from "../img/Donater_Small.png";
 
 const MainSection = () => {
   return (
-    <MainWrapper>
+    <MainWrapper id="howitworks">
       <TitleWrapper>
         <MainSectionTitle>Як це працює</MainSectionTitle>
         <MainSectionInfo>Етапи формування та закриття запиту</MainSectionInfo>

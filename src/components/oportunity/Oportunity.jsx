@@ -5,11 +5,11 @@ import Petitions from "./parts/Petitions";
 const Oportunity = () => {
   return (
     <>
-      <SectionWrapper>
+      <SectionWrapper id="oportunity">
         <Title>Також ви можете</Title>
-        <Funds/>
-        <Inits/>
-        <Petitions/>
+        <Funds />
+        <Inits />
+        <Petitions />
       </SectionWrapper>
     </>
   );

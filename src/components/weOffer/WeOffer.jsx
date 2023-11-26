@@ -15,7 +15,7 @@ import {
 
 export const WeOffer = () => {
   return (
-    <OfferWrapper>
+    <OfferWrapper id="weoffer">
       <LeftWrapper>
         <Offers>Ми пропонуємо</Offers>
         <OffersDescr>
@@ -66,7 +66,7 @@ export const WeOffer = () => {
             до зборів.
           </ProblemsItem>
           <ProblemsItem>
-            <ProblemsNumber>04</ProblemsNumber>Захист від шахройських схем.
+            <ProblemsNumber>04</ProblemsNumber>Захист від шахрайських схем.
           </ProblemsItem>
         </ProblemsList>
       </Poblems>

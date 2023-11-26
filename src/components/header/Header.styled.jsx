@@ -2,9 +2,15 @@ import styled from "@emotion/styled";
 
 export const HeaderStyled = styled.div`
   display: flex;
-  justify-content: space-between;
-  padding: 32px;
-  margin-bottom: 32px;
+  position: fixed;
+  z-index: 999;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  gap: 768px;
+  padding: 15px;
+  opacity: 0.98;
+  background-color: ${(props) => props.theme.colors.BG_Secondary};
 `;
 
 export const SloganStyled = styled.div`
@@ -12,7 +18,11 @@ export const SloganStyled = styled.div`
   flex-direction: column;
   justify-content: center;
   max-width: 535px;
-  margin: auto;
+  padding-top: 100px;
+`;
+export const SloganWrapper = styled.div`
+  display: flex;
+  justify-content: center;
 `;
 
 export const HeaderWrapper = styled.div`
