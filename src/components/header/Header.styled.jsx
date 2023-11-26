@@ -16,5 +16,21 @@ export const SloganStyled = styled.div`
 `;
 
 export const HeaderWrapper = styled.div`
-  margin-bottom: 100px;
+  margin-bottom: 64px;
+`;
+
+export const Title = styled.h1`
+  margin-bottom: 32px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29.44px;
+`;
+export const Text = styled.p`
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.32px;
 `;

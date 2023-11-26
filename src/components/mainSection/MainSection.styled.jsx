@@ -64,7 +64,6 @@ export const StickyContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-
 `;
 
 export const StickyElement = styled.div`

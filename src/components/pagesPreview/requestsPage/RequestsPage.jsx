@@ -1,4 +1,5 @@
-const Name = () => {
-  return <></>;
+import React from "react";
+
+export const RequestsPage = () => {
+  return <div>RequestsPage</div>;
 };
-export default Name;

@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 
 export const HeroWrapper = styled.div`
   font-family: "e-Ukraine-Regular", sans-serif;
-  padding-top: 10px;
   position: relative;
 `;
 
@@ -22,7 +21,6 @@ export const ArrowRight = styled.img`
   &:hover {
     cursor: pointer;
     transform: scale(1.2);
-    cursor: zoom-in;
   }
 `;
 export const ArrowLeft = styled.img`
@@ -35,6 +33,5 @@ export const ArrowLeft = styled.img`
   &:hover {
     cursor: pointer;
     transform: scale(1.2);
-    cursor: zoom-in;
   }
 `;
