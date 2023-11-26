@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 import CollaborationConfirmed from "./CollaborationConfirmed";
 import FoundVolunteer from "./FoundVolunteer";
 import {
@@ -21,7 +21,6 @@ import Volunteer_Small from "../img/Volunteer_Small.png";
 import Donater_Small from "../img/Donater_Small.png";
 
 const MainSection = () => {
-
   return (
     <MainWrapper>
       <TitleWrapper>
@@ -30,7 +29,7 @@ const MainSection = () => {
       </TitleWrapper>
       <StickyContainer>
         <StickyElement>
-          <StickyElementWrapper>
+          <StickyElementWrapper style={{ marginBottom: "248px" }}>
             <img
               src={Defender_Small}
               alt="add"
@@ -46,14 +45,16 @@ const MainSection = () => {
           </StickyElementWrapper>
         </StickyElement>
         <MakingRequest />
-        <StickyElement><p> </p></StickyElement>
+        <StickyElement>
+          <p> </p>
+        </StickyElement>
         <FoundVolunteer />
-        <StickyElement className='secondEl'>
-          <StickyElementWrapper>
+        <StickyElement className="secondEl">
+          <StickyElementWrapper style={{ marginBottom: "135px" }}>
             <StickyElementBox>
               <InfoTxt>Волонтер</InfoTxt>
               <StickyElementTxt>
-              Я організую. Покладись на мене:)
+                Я організую, покладись на мене.
               </StickyElementTxt>
             </StickyElementBox>
             <img
@@ -65,24 +66,21 @@ const MainSection = () => {
           </StickyElementWrapper>
         </StickyElement>
         <CollaborationConfirmed />
-        <StickyElement className='thirdEl'>
+        <StickyElement className="thirdEl">
           <StickyElementWrapper>
-            <img
-              src={Donater_Small}
-              alt="add"
-              width={"64px"}
-              height={"64px"}
-            />
+            <img src={Donater_Small} alt="add" width={"64px"} height={"64px"} />
             <StickyElementBox>
               <InfoTxt>Донатер</InfoTxt>
               <StickyElementTxt>
-              Я підтримую збір репостом та донатом!
+                Я підтримую збір репостом та донатом!
               </StickyElementTxt>
             </StickyElementBox>
           </StickyElementWrapper>
         </StickyElement>
         <RequestDone />
-        <StickyElement><p> </p></StickyElement>
+        <StickyElement>
+          <p> </p>
+        </StickyElement>
         <ScreenAdv />
       </StickyContainer>
     </MainWrapper>

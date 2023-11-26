@@ -26,48 +26,47 @@ export const WeOffer = () => {
       <Poblems>
         <Title>
           <img src={prob} alt="" />
-          <h2>Проблеми</h2>
+          <h2>Проблеми які ми вирішуємо</h2>
         </Title>
         <ProblemsList>
           <ProblemsItem>
-            <ProblemsNumber>01</ProblemsNumber>Велика кількість бригад мало
-            відомих, мають низькі охоплення
+            <ProblemsNumber>01</ProblemsNumber>Велика кількість новостворених
+            підрозділів, мають низьку охопленність.
           </ProblemsItem>
           <ProblemsItem>
-            <ProblemsNumber>02</ProblemsNumber>Є військові що відкривають збори
-            самотужки
+            <ProblemsNumber>02</ProblemsNumber>Іноді військові відкривають збори
+            самотужки.
           </ProblemsItem>
           <ProblemsItem>
             <ProblemsNumber>03</ProblemsNumber>Збори гублятся у інформаційному
-            просторі соц. мереж
+            просторі соц. мереж.
           </ProblemsItem>
           <ProblemsItem>
-            <ProblemsNumber>04</ProblemsNumber>Низька довіра до благодійних
-            зборів
+            <ProblemsNumber>04</ProblemsNumber>Низька довіра до невеличких
+            зборів.
           </ProblemsItem>
         </ProblemsList>
       </Poblems>
       <Poblems>
         <Title>
           <img src={sol} alt="" />
-          <h2>Рішення</h2>
+          <h2>Наші переваги</h2>
         </Title>
         <ProblemsList>
           <ProblemsItem>
             <ProblemsNumber>01</ProblemsNumber>Спрощенний процесс пошуку
-            допомоги для військових
+            допомоги для військових.
           </ProblemsItem>
           <ProblemsItem>
-            <ProblemsNumber>02</ProblemsNumber>Обєднення всіх не байдужих
-            допомогти.
+            <ProblemsNumber>02</ProblemsNumber>Обєднення всіх не байдужих в
+            одному місці.
           </ProblemsItem>
           <ProblemsItem>
-            <ProblemsNumber>03</ProblemsNumber>Підвищення впевненості донерів до
-            чесності зборів
+            <ProblemsNumber>03</ProblemsNumber>Підвищення рівня довіри донерів
+            до зборів.
           </ProblemsItem>
           <ProblemsItem>
-            <ProblemsNumber>04</ProblemsNumber>Перевірені збори та перевірені
-            волонетри.
+            <ProblemsNumber>04</ProblemsNumber>Захист від шахройських схем.
           </ProblemsItem>
         </ProblemsList>
       </Poblems>

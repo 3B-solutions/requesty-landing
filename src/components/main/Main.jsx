@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <div>
       <WeOffer />
-      <MainSection />
+      <MainSection id="howitworks" />
     </div>
   );
 };
