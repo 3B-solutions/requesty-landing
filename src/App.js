@@ -6,6 +6,7 @@ import Hero from "./components/hero/Hero";
 import Main from "components/main/Main.jsx";
 import Footer from "./components/footer/Footer";
 import Oportunity from "components/oportunity/Oportunity";
+import Safety from "components/safety/Safety";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <Hero />
         <Main />
+        <Safety/>
         <Oportunity />
         <Footer />
       </div>
