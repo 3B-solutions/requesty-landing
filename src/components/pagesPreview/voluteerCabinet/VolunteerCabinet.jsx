@@ -1,4 +1,5 @@
-const Name = () => {
-  return <></>;
+import React from "react";
+
+export const VolunteerCabinet = () => {
+  return <div>VolunteerCabinet</div>;
 };
-export default Name;

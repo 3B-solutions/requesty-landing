@@ -1,14 +1,14 @@
-import { SloganStyled } from "./Header.styled";
+import { SloganStyled, Title, Text } from "./Header.styled";
 const Slogan = () => {
   return (
     <SloganStyled>
-      <h1>Запит. Збір. Донат.</h1>
-      <p>
+      <Title>Запит. Збір. Донат.</Title>
+      <Text>
         Ми - надійний посередник, який спрощує процес відбору та співпраці,
         допомагаючи кожному військовому знайти перевіреного волонтера. Наша
         команда прагне об'єднати зусилля військових, волонтерів та людей, які
         донатять.
-      </p>
+      </Text>
     </SloganStyled>
   );
 };

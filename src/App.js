@@ -3,6 +3,7 @@ import { ThemeProvider } from '@emotion/react';
 import { theme } from './theme';
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
+import Main from "components/main/Main.jsx";
 import Footer from "./components/footer/Footer";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <div className="App">
         <Header />
         <Hero />
+        <Main />
         <Footer />
       </div>
     </ThemeProvider>
