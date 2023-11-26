@@ -10,8 +10,8 @@ import {
   MainSectionTxt,
   HalfBox,
 } from "./MainSection.styled";
-import Defender_Small from "../img/Defender_Small.png";
-import Volunteer_Small from "../img/Volunteer_Small.png";
+import Defender_Small from "../img/vector-soldier.jpg";
+import Volunteer_Small from "../img/vector-volunteer.jpg";
 import QuestionMark from "../img/QuestionMark.svg";
 
 import { Button } from "../styled/Button.styled";
@@ -94,9 +94,9 @@ const FoundVolunteer = () => {
             Платформа знаходить потрібного волонтера по категорії
           </MainSectionSubTitle>
           <MainSectionTxt>
-            Задача волонтера та військового проговори всі нюанси потреби, та
-            домовитись про спів праці. У разі успішного діалогу військовий
-            підтвержує роботу з конкретним волонтером
+            Задача волонтера та військового проговорити всі нюанси потреби, та
+            домовитись про співпрацю. У разі успішного діалогу військовий
+            підтвержує роботу з конкретним волонтером.
           </MainSectionTxt>
         </ContentBox>
       </StickyContent>

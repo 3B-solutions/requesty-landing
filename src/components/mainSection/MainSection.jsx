@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import CollaborationConfirmed from "./CollaborationConfirmed";
 import FoundVolunteer from "./FoundVolunteer";
 import {
@@ -11,14 +11,15 @@ import {
   StickyElementBox,
   StickyElementTxt,
   StickyElementWrapper,
+  StickyIMGThumb,
   TitleWrapper,
 } from "./MainSection.styled";
 import MakingRequest from "./MakingRequest";
 import RequestDone from "./RequestDone";
 import ScreenAdv from "./ScreenAdv";
-import Defender_Small from "../img/Defender_Small.png";
-import Volunteer_Small from "../img/Volunteer_Small.png";
-import Donater_Small from "../img/Donater_Small.png";
+import Defender_Small from "../img/vector-soldier.jpg";
+import Volunteer_Small from "../img/vector-volunteer.jpg";
+import Donater_Small from "../img/vector-donater.jpg";
 
 const MainSection = () => {
   return (
@@ -30,12 +31,14 @@ const MainSection = () => {
       <StickyContainer>
         <StickyElement>
           <StickyElementWrapper style={{ marginBottom: "248px" }}>
-            <img
-              src={Defender_Small}
-              alt="add"
-              width={"64px"}
-              height={"64px"}
-            />
+            <StickyIMGThumb>
+              <img
+                src={Defender_Small}
+                alt="add"
+                width={"108px"}
+                height={"108px"}
+              />
+            </StickyIMGThumb>
             <StickyElementBox>
               <InfoTxt>Військовий</InfoTxt>
               <StickyElementTxt>
@@ -57,18 +60,27 @@ const MainSection = () => {
                 Я організую, покладись на мене.
               </StickyElementTxt>
             </StickyElementBox>
-            <img
-              src={Volunteer_Small}
-              alt="add"
-              width={"64px"}
-              height={"64px"}
-            />
+            <StickyIMGThumb>
+              <img
+                src={Volunteer_Small}
+                alt="add"
+                width={"108px"}
+                height={"108px"}
+              />
+            </StickyIMGThumb>
           </StickyElementWrapper>
         </StickyElement>
         <CollaborationConfirmed />
         <StickyElement className="thirdEl">
           <StickyElementWrapper>
-            <img src={Donater_Small} alt="add" width={"64px"} height={"64px"} />
+            <StickyIMGThumb>
+              <img
+                src={Donater_Small}
+                alt="add"
+                width={"108px"}
+                height={"108px"}
+              />
+            </StickyIMGThumb>
             <StickyElementBox>
               <InfoTxt>Донатер</InfoTxt>
               <StickyElementTxt>

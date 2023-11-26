@@ -52,8 +52,7 @@ const RequestDone = () => {
         <ContentBox>
           <MainSectionSubTitle>Волонтер відкриває збір</MainSectionSubTitle>
           <MainSectionTxt>
-            Заповниши карточку збору, прописавши ціль та опис відкриває збір на
-            платформі
+            Заповниши карточку збору, прописавши ціль та опис, волонтер успішно відкриває збір.
           </MainSectionTxt>
 
         </ContentBox>

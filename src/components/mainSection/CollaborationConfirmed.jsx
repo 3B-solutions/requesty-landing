@@ -8,7 +8,7 @@ import {
   MainSectionTxt,
   BunnonsContainer,
 } from "./MainSection.styled";
-import Defender_Small from "../img/Defender_Small.png";
+import Defender_Small from "../img/vector-soldier.jpg";
 
 import DoneMark from "../img/DoneMark.svg";
 
