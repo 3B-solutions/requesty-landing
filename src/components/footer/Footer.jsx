@@ -33,10 +33,9 @@ const Footer = () => {
               нашу платформу.
             </TextInfo>
             <InfoMail>
-              <TextContact>+38066030309</TextContact>
+              <TextContact>+380634347244</TextContact>
               <TextContact>requestyua@gmail.com</TextContact>
             </InfoMail>
-            <WorkingBtn>Співпраця</WorkingBtn>
           </InfoContact>
         </FootInfo>
         <LableFoot>
