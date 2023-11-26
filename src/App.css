@@ -26,6 +26,7 @@
   flex-direction: column;
   top: 40%;
   left: 50%;
+  width: 480px;
   transform: translate(-50%, -50%);
   background-color: #ECEEF2;
   padding: 20px;

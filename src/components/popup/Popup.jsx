@@ -17,7 +17,10 @@ const Popup = () => {
       contentLabel="Example Modal"
       className="ReactModal"
     >
-      <p>Вітаємо на сайті презентації Requesty!</p>
+      <p>
+        Вітаємо на сайті презентації Requesty! Ви зможете користуватися
+        платформою вже зовсім скоро.
+      </p>
       <button onClick={closeModal}>Закрити</button>
     </Modal>
   );
