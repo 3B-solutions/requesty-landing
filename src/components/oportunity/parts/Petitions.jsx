@@ -63,7 +63,7 @@ const Petitions = () => {
                 <TextsParag>
                   Додайте петицію, якщо вона
                   <br />
-                  пов’язана з військовими.
+                  пов’язана з нашими захисниками.
                 </TextsParag>
                 <ButtonInfo>Додати петицію</ButtonInfo>
               </TextInfo>
