@@ -1,0 +1,17 @@
+name: REQUESTY LANDING MAIN DEPLOY
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  self-hosted-runner-job:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Run Bash script on self-hosted runner
+        run: |
+          # Start build and deploy
+          pwd
