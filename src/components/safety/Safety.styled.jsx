@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { mediaSizes } from "../constants/media";
 
 export const SafetyWrapper = styled.div`
   font-family: "e-Ukraine-Regular", sans-serif;
@@ -24,7 +25,15 @@ export const SafetyTitle = styled.h2`
 export const InfoWrapper = styled.div`
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: 16px;
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+  }
+  @media screen and (min-width: ${mediaSizes.laptop}) {
+    flex-direction: row;
+  }
+  @media screen and (min-width: ${mediaSizes.desktop}) {
+  }
 `;
 
 export const DiyaWrap = styled.div`

@@ -1,30 +1,45 @@
 import styled from "@emotion/styled";
+import { mediaSizes } from "../../constants/media";
 
 export const PetitsWrapper = styled.div`
   font-family: "e-Ukraine-Regular", sans-serif;
   position: relative;
-  min-height: 487px;
   margin: 0 auto;
   padding-top: 34px;
   padding-bottom: 0px;
-  padding-left: 32px;
-  padding-right: 147px;
-  border-radius: 16px;
   background: #eceef2;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+  }
+  @media screen and (min-width: ${mediaSizes.laptop}) {
+  }
+  @media screen and (min-width: ${mediaSizes.desktop}) {
+    min-width: 1376px;
+    padding-left: 32px;
+    padding-right: 147px;
+    border-radius: 16px;
+    flex-direction: row;
+  }
 `;
 
 export const FixedText = styled.div`
   width: 317px;
   background-color: #f0f0f0;
   display: inline-flex;
-  margin-bottom: 32px;
-  margin-right: 124px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
   gap: 16px;
+  padding-left: 30px;
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+  }
+  @media screen and (min-width: ${mediaSizes.laptop}) {
+  }
+  @media screen and (min-width: ${mediaSizes.desktop}) {
+    margin-bottom: 32px;
+    margin-right: 124px;
+  }
 `;
 
 export const PetitsTitle = styled.h2`
