@@ -30,13 +30,13 @@ const MainSection = () => {
       </TitleWrapper>
       <StickyContainer>
         <StickyElement>
-          <StickyElementWrapper style={{ marginBottom: "248px" }}>
+          <StickyElementWrapper className="first">
             <StickyIMGThumb>
               <img
                 src={Defender_Small}
                 alt="add"
-                width={"108px"}
-                height={"108px"}
+                width={"100%"}
+                height={"100%"}
               />
             </StickyIMGThumb>
             <StickyElementBox>
@@ -53,7 +53,7 @@ const MainSection = () => {
         </StickyElement>
         <FoundVolunteer />
         <StickyElement className="secondEl">
-          <StickyElementWrapper style={{ marginBottom: "135px" }}>
+          <StickyElementWrapper className="second">
             <StickyElementBox>
               <InfoTxt>Волонтер</InfoTxt>
               <StickyElementTxt>
@@ -64,8 +64,8 @@ const MainSection = () => {
               <img
                 src={Volunteer_Small}
                 alt="add"
-                width={"108px"}
-                height={"108px"}
+                width={"100%"}
+                height={"100%"}
               />
             </StickyIMGThumb>
           </StickyElementWrapper>
@@ -77,8 +77,8 @@ const MainSection = () => {
               <img
                 src={Donater_Small}
                 alt="add"
-                width={"108px"}
-                height={"108px"}
+                width={"100%"}
+                height={"100%"}
               />
             </StickyIMGThumb>
             <StickyElementBox>
