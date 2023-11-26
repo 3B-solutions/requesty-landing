@@ -244,3 +244,6 @@ export const ShortDescr = styled.p`
   line-height: 12.6px;
   letter-spacing: 0.168px;
 `;
+export const StyledFund = styled.li`
+  border-bottom: 1px solid #000;
+`;

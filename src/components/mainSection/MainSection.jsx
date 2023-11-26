@@ -84,7 +84,7 @@ const MainSection = () => {
             <StickyElementBox>
               <InfoTxt>Донатер</InfoTxt>
               <StickyElementTxt>
-                Я підтримую збір репостом та донатом!
+                Я підтримаю збір донатом та поширю!
               </StickyElementTxt>
             </StickyElementBox>
           </StickyElementWrapper>

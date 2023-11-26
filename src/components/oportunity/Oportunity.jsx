@@ -6,7 +6,7 @@ const Oportunity = () => {
   return (
     <>
       <SectionWrapper id="oportunity">
-        <Title>Також ви можете</Title>
+        <Title>Це ще не все</Title>
         <Funds />
         <Inits />
         <Petitions />

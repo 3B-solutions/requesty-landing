@@ -3,21 +3,20 @@ import styled from "@emotion/styled";
 export const PetitsWrapper = styled.div`
   font-family: "e-Ukraine-Regular", sans-serif;
   position: relative;
-  min-width: 1376px; 
   min-height: 487px;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding-top: 34px;
   padding-bottom: 0px;
   padding-left: 32px;
   padding-right: 147px;
   border-radius: 16px;
-  background: #ECEEF2;
-  display: flex; 
+  background: #eceef2;
+  display: flex;
   flex-direction: row;
 `;
 
 export const FixedText = styled.div`
-  width: 317px; 
+  width: 317px;
   background-color: #f0f0f0;
   display: inline-flex;
   margin-bottom: 32px;
@@ -29,7 +28,7 @@ export const FixedText = styled.div`
 `;
 
 export const PetitsTitle = styled.h2`
-  color: ${props => props.theme.colors.Text_Main};
+  color: ${(props) => props.theme.colors.Text_Main};
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -39,7 +38,7 @@ export const PetitsTitle = styled.h2`
 `;
 
 export const PetitsTexts = styled.p`
-  color: ${props => props.theme.colors.Text_Main};
+  color: ${(props) => props.theme.colors.Text_Main};
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -51,7 +50,7 @@ export const PetitsTexts = styled.p`
 export const ScrollableContent = styled.div`
   flex-grow: 1;
   overflow-y: auto;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   padding-top: 16.8px;
   padding-bottom: 0px;
   width: 756px;
@@ -59,8 +58,8 @@ export const ScrollableContent = styled.div`
   max-height: 451.5px;
   flex-shrink: 0;
   border-radius: 8px 8px 0px 0px;
-  border: 1px solid ${props => props.theme.colors.White};
-  background: ${props => props.theme.colors.White}; /* Змінено фон на білий */
+  border: 1px solid ${(props) => props.theme.colors.White};
+  background: ${(props) => props.theme.colors.White}; /* Змінено фон на білий */
 
   &::-webkit-scrollbar {
     width: 0.2px; /* Ширина повзунка */
@@ -76,17 +75,15 @@ export const ScrollableContent = styled.div`
 `;
 
 export const HeadWrap = styled.div`
-    padding-left: 16.8px;
-    padding-right: 3.2px;
-`
+  padding-left: 16.8px;
+  padding-right: 3.2px;
+`;
 
 export const LogoWrap = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-left: 30px;
   gap: 345px;
-  
 `;
 
 export const NavWrapper = styled.div`
@@ -108,7 +105,7 @@ export const Nav = styled.ul`
     content: "";
     width: 0.525px;
     height: 21px;
-    background: #D9D9D9;
+    background: #d9d9d9;
     position: absolute;
     right: -16.8px;
     top: 50%;
@@ -143,7 +140,7 @@ export const TitleInfo = styled.div`
 `;
 
 export const TitlePetits = styled.h2`
-  color: ${props => props.theme.colors.Text_Main};
+  color: ${(props) => props.theme.colors.Text_Main};
   font-size: 25.2px;
   font-style: normal;
   font-weight: 400;
@@ -152,7 +149,7 @@ export const TitlePetits = styled.h2`
 `;
 
 export const TextInfo = styled.div`
-  display: flex; 
+  display: flex;
   flex-direction: column;
   max-width: 100%;
   align-items: flex-start;
@@ -161,16 +158,16 @@ export const TextInfo = styled.div`
 `;
 
 export const TextsParag = styled.p`
-  max-width: 100%; 
+  max-width: 100%;
   font-size: 8.4px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 12.6px;
-    letter-spacing: 0.168px;
-    text-align: justify;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12.6px;
+  letter-spacing: 0.168px;
+  text-align: justify;
   margin: 0;
-  padding: 0; 
-  margin-bottom: 16px;   
+  padding: 0;
+  margin-bottom: 16px;
 `;
 
 export const ButtonInfo = styled.button`
@@ -179,47 +176,47 @@ export const ButtonInfo = styled.button`
   cursor: pointer;
   gap: 5.25px;
   border-radius: 4.2px;
-  border: 0.525px solid ${props => props.theme.colors.Text_Main};
-  background: ${props => props.theme.colors.Text_Main};
-  color: ${props => props.theme.colors.BG_Main};
+  border: 0.525px solid ${(props) => props.theme.colors.Text_Main};
+  background: ${(props) => props.theme.colors.Text_Main};
+  color: ${(props) => props.theme.colors.BG_Main};
   font-size: 6.3px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 9.45px;
-    letter-spacing: 0.126px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 9.45px;
+  letter-spacing: 0.126px;
 `;
 
 export const PetitsParts = styled.div`
   min-height: 600px;
-  background: #ECEEF2;
+  background: #eceef2;
   padding-bottom: 16.8px;
 `;
 
 export const PetitList = styled.ul`
-    padding-top: 16px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    gap: 16px 8.4px;
-    flex-wrap: wrap;
-    justify-content: center;
-`
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 16px 8.4px;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
 
 export const PetitPart = styled.li`
-    display: flex;
-    width: 357px;
-    padding: 16.8px;
-    gap: 16.8px;
-    flex-shrink: 0;
-    border-radius: 8.4px;
-    background: ${props => props.theme.colors.White};
-`
+  display: flex;
+  width: 357px;
+  padding: 16.8px;
+  gap: 16.8px;
+  flex-shrink: 0;
+  border-radius: 8.4px;
+  background: ${(props) => props.theme.colors.White};
+`;
 
 export const PetitLook = styled.div`
-    display: flex; 
-    flex-direction: column;
-    gap: 13px;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  justify-content: center;
   text-align: left;
 `;
 
@@ -229,30 +226,32 @@ export const PetitDescr = styled.div`
   justify-content: center;
   text-align: left;
   gap: 40px;
-`
+`;
 
 export const NamePetit = styled.h3`
-    width: 500%;
-    align-self: stretch;
-    color: #000;
-    font-size: 12.6px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 15.12px;
+  width: 500%;
+  align-self: stretch;
+  color: #000;
+  font-size: 12.6px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.12px;
 `;
 
 export const ShortDescr = styled.p`
-    color: #000;
-    font-size: 8.4px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 12.6px;
-    letter-spacing: 0.168px; 
+  color: #000;
+  font-size: 8.4px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12.6px;
+  letter-spacing: 0.168px;
 
-    &.smallSize {
-        font-size: 6.3px;
-        line-height: 9.45px;
-        letter-spacing: 0.126px;
-    }
+  &.smallSize {
+    font-size: 6.3px;
+    line-height: 9.45px;
+    letter-spacing: 0.126px;
+  }
 `;
-
+export const StyledPet = styled.li`
+  border-bottom: 1px solid #000;
+`;

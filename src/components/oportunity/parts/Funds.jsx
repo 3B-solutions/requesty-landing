@@ -22,6 +22,7 @@ import {
   FundPart,
   NameFund,
   ShortDescr,
+  StyledFund,
 } from "./Funds.styled";
 import logo from "../../img/LOGO green.svg";
 import fund from "../../img/fundImg.jpg";
@@ -44,7 +45,7 @@ const Funds = () => {
               <NavWrapper>
                 <Nav>
                   <li>Збори</li>
-                  <li>Фонди</li>
+                  <StyledFund>Фонди</StyledFund>
                   <li>Петиції</li>
                   <li>Ініціативи</li>
                 </Nav>
