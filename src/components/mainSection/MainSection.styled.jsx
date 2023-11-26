@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { mediaSizes } from 'components/constants/media';
+import { mediaSizes } from "components/constants/media";
 
 export const MainWrapper = styled.div`
   width: 100%;
@@ -7,6 +7,10 @@ export const MainWrapper = styled.div`
   background-color: ${(props) => props.theme.colors.BG_Secondary};
   position: sticky;
   top: -48px;
+  @media screen and (max-width: ${mediaSizes.mobileL}) {
+    padding: 32px 8px;
+    position: relative;
+  }
 `;
 export const StickyWrapper = styled.div`
   width: 100%;
@@ -19,10 +23,10 @@ export const TitleWrapper = styled.div`
   display: flex;
   align-items: start;
   margin-bottom: 64px;
-  @media screen and (max-width: ${mediaSizes.mobile}) {
-    margin-bottom: 100px;
+  @media screen and (max-width: ${mediaSizes.mobileL}) {
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
+    margin-bottom: 24px;
   }
 `;
 
@@ -32,11 +36,19 @@ export const MainSectionTitle = styled.h2`
   font-size: 32px;
   font-weight: 400;
   line-height: 92%;
+  @media screen and (max-width: ${mediaSizes.mobileL}) {
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+  }
 `;
 export const MainSectionSubTitle = styled.h3`
   font-size: 24px;
   font-weight: 400;
   line-height: 120%;
+  @media screen and (max-width: ${mediaSizes.mobileL}) {
+    font-size: 20px;
+  }
 `;
 
 export const MainSectionTxt = styled.p`
@@ -48,6 +60,9 @@ export const MainSectionTxt = styled.p`
     margin-top: 32px;
     margin-bottom: 8px;
   }
+  @media screen and (max-width: ${mediaSizes.mobileL}) {
+    font-size: 14px;
+  }
 `;
 export const MainSectionInfo = styled.p`
   display: block;
@@ -57,6 +72,11 @@ export const MainSectionInfo = styled.p`
   font-weight: 400;
   line-height: 150%; /* 30px */
   letter-spacing: 0.2px;
+  @media screen and (max-width: ${mediaSizes.mobileL}) {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
 `;
 export const SummInfo = styled.p`
   text-align: left;
@@ -86,6 +106,11 @@ export const StickyElement = styled.div`
   &.thirdEl {
     top: 280px;
   }
+  @media screen and (max-width: ${mediaSizes.mobileL}) {
+    width: 100%;
+    position: static;
+    margin-bottom: 12px;
+  }
 `;
 
 export const StickyElementTxt = styled.div`
@@ -104,6 +129,13 @@ export const StickyElementTxt = styled.div`
   width: 220px;
 
   background-color: ${(props) => props.theme.colors.Button};
+
+  @media screen and (max-width: ${mediaSizes.mobileL}) {
+    width: 200px;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 125%;
+  }
 `;
 
 export const StickyElementWrapper = styled.div`
@@ -111,6 +143,18 @@ export const StickyElementWrapper = styled.div`
   width: 100%;
   gap: 16px;
   justify-content: start;
+  &.first {
+    margin-bottom: 248px;
+    @media screen and (max-width: ${mediaSizes.mobileL}) {
+      margin-bottom: 0;
+    }
+  }
+  &.second {
+    margin-bottom: 135px;
+    @media screen and (max-width: ${mediaSizes.mobileL}) {
+      margin-bottom: 0;
+    }
+  }
 `;
 
 export const StickyElementBox = styled.div`
@@ -118,6 +162,9 @@ export const StickyElementBox = styled.div`
   flex-direction: column;
   gap: 8px;
   justify-content: start;
+  @media screen and (max-width: ${mediaSizes.mobileL}) {
+    gap: 4px;
+  }
 `;
 
 export const StickyIMGThumb = styled.div`
@@ -125,6 +172,10 @@ export const StickyIMGThumb = styled.div`
   height: 108px;
   border-radius: 8px;
   overflow: hidden;
+  @media screen and (max-width: ${mediaSizes.mobileL}) {
+    width: 64px;
+    height: 64px;
+  }
 `;
 
 export const StickyContent = styled.div`
@@ -133,6 +184,10 @@ export const StickyContent = styled.div`
   height: fit-content;
   gap: 16px;
   padding-bottom: 32px;
+  @media screen and (max-width: ${mediaSizes.mobileL}) {
+    width: 100%;
+    flex-direction: column;
+  }
 `;
 export const ContentBox = styled.div`
   display: flex;
@@ -145,6 +200,9 @@ export const ContentBox = styled.div`
   border-radius: 16px;
   text-align: left;
   height: fit-content;
+  @media screen and (max-width: ${mediaSizes.mobileL}) {
+    width: 100%;
+  }
 `;
 
 export const ContentBoxWhite = styled.div`
@@ -161,6 +219,13 @@ export const ContentBoxWhite = styled.div`
   &.last {
     background: ${(props) => props.theme.colors.BG_Secondary};
     flex-direction: row;
+    @media screen and (max-width: ${mediaSizes.mobileL}) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media screen and (max-width: ${mediaSizes.mobileL}) {
+    width: 100%;
   }
 `;
 
