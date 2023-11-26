@@ -1,16 +1,35 @@
 import styled from "@emotion/styled";
+import { mediaSizes } from "../constants/media";
 
 export const HeaderStyled = styled.div`
   display: flex;
-  position: fixed;
-  z-index: 999;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 10px;
   width: 100%;
-  gap: 768px;
-  padding: 15px;
-  opacity: 0.98;
   background-color: ${(props) => props.theme.colors.BG_Secondary};
+
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+    position: fixed;
+    z-index: 999;
+    gap: 200px;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: ${mediaSizes.laptop}) {
+    gap: 500px;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: ${mediaSizes.desktop}) {
+    position: fixed;
+    z-index: 999;
+    align-items: center;
+    justify-content: space-around;
+    gap: 768px;
+    opacity: 0.98;
+  }
 `;
 
 export const SloganStyled = styled.div`
@@ -31,10 +50,19 @@ export const HeaderWrapper = styled.div`
 
 export const Title = styled.h1`
   margin-bottom: 32px;
-  font-size: 48px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 700;
   line-height: 29.44px;
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+    font-size: 38px;
+  }
+  @media screen and (min-width: ${mediaSizes.laptop}) {
+    font-size: 40px;
+  }
+  @media screen and (min-width: ${mediaSizes.desktop}) {
+    font-size: 48px;
+  }
 `;
 export const Text = styled.p`
   text-align: center;

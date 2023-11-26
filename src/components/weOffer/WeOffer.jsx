@@ -31,7 +31,7 @@ export const WeOffer = () => {
         <ProblemsList>
           <ProblemsItem>
             <ProblemsNumber>01</ProblemsNumber>Велика кількість новостворених
-            підрозділів, мають низьку охопленність.
+            підрозділів мають низьку охопленність.
           </ProblemsItem>
           <ProblemsItem>
             <ProblemsNumber>02</ProblemsNumber>Іноді військові відкривають збори
@@ -58,7 +58,7 @@ export const WeOffer = () => {
             допомоги для військових.
           </ProblemsItem>
           <ProblemsItem>
-            <ProblemsNumber>02</ProblemsNumber>Обєднення всіх не байдужих в
+            <ProblemsNumber>02</ProblemsNumber>Об'єднання всіх небайдужих в
             одному місці.
           </ProblemsItem>
           <ProblemsItem>

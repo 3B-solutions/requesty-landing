@@ -1,11 +1,16 @@
 import styled from "@emotion/styled";
+import { mediaSizes } from "../constants/media";
 
 export const OfferWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 17px;
   padding: 64px 32px 96px;
   background-color: ${(props) => props.theme.colors.BG_Main};
   text-align: start;
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+    flex-direction: row;
+  }
 `;
 
 export const Poblems = styled.div`
@@ -59,7 +64,9 @@ export const LeftWrapper = styled.div`
   flex-direction: column;
   gap: 32px;
   padding: 32px;
-  width: 600px;
   border-radius: 16px;
   border: 1px solid ${(props) => props.theme.colors.BG_Secondary};
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+    width: 600px;
+  }
 `;

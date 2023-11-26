@@ -7,7 +7,7 @@ import {
   MainSectionTxt,
   InfoTxt,
   TxtLineWrapper,
-  SummInfo
+  SummInfo,
 } from "./MainSection.styled";
 import Dron from "../img/Dron.png";
 import { Button } from "../styled/Button.styled";
@@ -45,16 +45,16 @@ const RequestDone = () => {
           <BunnonsContainer>
             <Button type="button">Донат</Button>
             <Button className="bordered" type="button">
-            Поділитись
+              Поділитись
             </Button>
           </BunnonsContainer>
         </ContentBoxWhite>
         <ContentBox>
           <MainSectionSubTitle>Волонтер відкриває збір</MainSectionSubTitle>
           <MainSectionTxt>
-            Заповниши карточку збору, прописавши ціль та опис, волонтер успішно відкриває збір.
+            Заповниши картку збору, прописавши ціль та опис, волонтер успішно
+            відкриває збір.
           </MainSectionTxt>
-
         </ContentBox>
       </StickyContent>
     </>
