@@ -7,7 +7,9 @@ import {
   MainSectionTxt,
   InfoTxt,
   TxtLineWrapper,
-  SummInfo
+  SummInfo,
+  ProgressLine,
+  ProgressLineFill
 } from "./MainSection.styled";
 import Dron from "../img/Dron.png";
 import { Button } from "../styled/Button.styled";
@@ -36,7 +38,9 @@ const RequestDone = () => {
               <SummInfo>264 000 ₴</SummInfo>
             </TxtLineWrapper>
           </BunnonsContainer>
-          <div>progress line</div>
+          <ProgressLine>
+            <ProgressLineFill></ProgressLineFill>
+          </ProgressLine>
           <InfoTxt>
             DJI - Mavic 3! 🚁 Нам життєво необхідно робити скиди. Нажаль
             минулого місяця ми втратили вже 3 штуки через ворожий реб, тому
