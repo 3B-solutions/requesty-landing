@@ -8,7 +8,6 @@ import {
   TextInfo,
   TextContact,
   InfoMail,
-  WorkingBtn,
   LableFoot,
   CopyText,
   LableText,
