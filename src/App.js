@@ -6,6 +6,7 @@ import Hero from "./components/hero/Hero";
 import Main from "components/main/Main.jsx";
 import Footer from "./components/footer/Footer";
 import Oportunity from "components/oportunity/Oportunity";
+import Safety from "components/safety/Safety";
 import ScrollToTop from "react-scroll-to-top";
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
         <Header id="weare" />
         <Hero />
         <Main />
-        <Oportunity id='oportunity' />
+        <Oportunity />
         <Footer />
         <ScrollToTop smooth />
       </div>
