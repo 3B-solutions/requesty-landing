@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 
 export const SafetyWrapper = styled.div`
   font-family: "e-Ukraine-Regular", sans-serif;
-  max-width: 1440px;
   min-height: 611px;
   margin: 0 auto;
   display: flex;
