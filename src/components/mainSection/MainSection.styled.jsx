@@ -5,16 +5,24 @@ export const MainWrapper = styled.div`
   width: 100%;
   padding: 64px 32px 94px 32px;
   background-color: ${(props) => props.theme.colors.BG_Secondary};
+  position: -webkit-sticky;
   position: sticky;
-  top: -48px;
-  @media screen and (max-width: ${mediaSizes.mobileL}) {
-    padding: 32px 8px;
-    position: relative;
+  top: -52px;
+  @media screen and (max-width: ${mediaSizes.tablet}) {
+    padding: 24px 8px;
+    position: static;
+  }
+  @media screen and (max-width: ${mediaSizes.tabletL}) {
+    padding: 32px 16px;
+    position: -webkit-sticky;
+    top: -72px;
+    position: sticky;
   }
 `;
 export const StickyWrapper = styled.div`
   width: 100%;
   background-color: ${(props) => props.theme.colors.BG_Secondary};
+  position: -webkit-sticky;
   position: sticky;
 `;
 
@@ -23,10 +31,14 @@ export const TitleWrapper = styled.div`
   display: flex;
   align-items: start;
   margin-bottom: 64px;
-  @media screen and (max-width: ${mediaSizes.mobileL}) {
+  @media screen and (max-width: ${mediaSizes.tabletS}) {
     flex-direction: column;
     gap: 24px;
     margin-bottom: 24px;
+  }
+  @media screen and (max-width: ${mediaSizes.tablet}) {
+    gap: 24px;
+    margin-bottom: 32px;
   }
 `;
 
@@ -36,7 +48,7 @@ export const MainSectionTitle = styled.h2`
   font-size: 32px;
   font-weight: 400;
   line-height: 92%;
-  @media screen and (max-width: ${mediaSizes.mobileL}) {
+  @media screen and (max-width: ${mediaSizes.tabletS}) {
     font-size: 28px;
     text-align: center;
     width: 100%;
@@ -46,7 +58,7 @@ export const MainSectionSubTitle = styled.h3`
   font-size: 24px;
   font-weight: 400;
   line-height: 120%;
-  @media screen and (max-width: ${mediaSizes.mobileL}) {
+  @media screen and (max-width: ${mediaSizes.tabletS}) {
     font-size: 20px;
   }
 `;
@@ -60,7 +72,7 @@ export const MainSectionTxt = styled.p`
     margin-top: 32px;
     margin-bottom: 8px;
   }
-  @media screen and (max-width: ${mediaSizes.mobileL}) {
+  @media screen and (max-width: ${mediaSizes.tabletS}) {
     font-size: 14px;
   }
 `;
@@ -72,7 +84,7 @@ export const MainSectionInfo = styled.p`
   font-weight: 400;
   line-height: 150%; /* 30px */
   letter-spacing: 0.2px;
-  @media screen and (max-width: ${mediaSizes.mobileL}) {
+  @media screen and (max-width: ${mediaSizes.tabletS}) {
     font-size: 20px;
     text-align: center;
     width: 100%;
@@ -96,19 +108,45 @@ export const StickyElement = styled.div`
   width: 30%;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 60px;
   font-size: 20px;
   margin-bottom: 32px;
   height: fit-content;
+  padding-right: 16px;
   &.secondEl {
     top: 140px;
+    @media screen and (min-width: ${mediaSizes.tablet}) {
+      top: 174px;
+    }
+    @media screen and (max-width: ${mediaSizes.tabletL}) {
+      top: 174px;
+    }
+    @media screen and (min-width: ${mediaSizes.desktopS}) {
+      top: 178px;
+    }
   }
   &.thirdEl {
     top: 280px;
+    @media screen and (min-width: ${mediaSizes.tablet}) {
+      top: 320px;
+    }
+    @media screen and (max-width: ${mediaSizes.tabletL}) {
+      top: 284px;
+    }
+    @media screen and (min-width: ${mediaSizes.desktopS}) {
+      top: 280px;
+    }
   }
-  @media screen and (max-width: ${mediaSizes.mobileL}) {
+  @media screen and (max-width: ${mediaSizes.tabletS}) {
     width: 100%;
     position: static;
+    margin-bottom: 12px;
+    padding-right: 4px;
+  }
+  @media screen and (max-width: ${mediaSizes.tablet}) {
+    width: 40%;
+    position: -webkit-sticky;
+    position: sticky;
     margin-bottom: 12px;
   }
 `;
@@ -126,13 +164,22 @@ export const StickyElementTxt = styled.div`
   align-self: stretch;
   border-radius: 16px;
 
-  width: 220px;
+  width: 100%;
 
   background-color: ${(props) => props.theme.colors.Button};
 
-  @media screen and (max-width: ${mediaSizes.mobileL}) {
-    width: 200px;
+  @media screen and (max-width: ${mediaSizes.tabletS}) {
+    width: 160px;
     padding: 8px;
+    font-size: 14px;
+    line-height: 125%;
+  }
+  @media screen and (max-width: ${mediaSizes.tablet}) {
+    width: 200px;
+  }
+  @media screen and (max-width: ${mediaSizes.tablet}) {
+    width: 136px;
+    padding: 12px;
     font-size: 14px;
     line-height: 125%;
   }
@@ -145,15 +192,18 @@ export const StickyElementWrapper = styled.div`
   justify-content: start;
   &.first {
     margin-bottom: 248px;
-    @media screen and (max-width: ${mediaSizes.mobileL}) {
+    @media screen and (max-width: ${mediaSizes.tabletS}) {
       margin-bottom: 0;
     }
   }
   &.second {
     margin-bottom: 135px;
-    @media screen and (max-width: ${mediaSizes.mobileL}) {
+    @media screen and (max-width: ${mediaSizes.tabletS}) {
       margin-bottom: 0;
     }
+  }
+  @media screen and (max-width: ${mediaSizes.tablet}) {
+    gap: 8px;
   }
 `;
 
@@ -162,8 +212,19 @@ export const StickyElementBox = styled.div`
   flex-direction: column;
   gap: 8px;
   justify-content: start;
-  @media screen and (max-width: ${mediaSizes.mobileL}) {
+  /* !!!!!!!!!!!!!!!!!!! */
+  width: calc(100% - 124px);
+  @media screen and (max-width: ${mediaSizes.tabletS}) {
     gap: 4px;
+    width: calc(100% - 72px);
+  }
+  @media screen and (max-width: ${mediaSizes.tablet}) {
+    gap: 4px;
+    width: calc(100% - 80px);
+  }
+  @media screen and (max-width: ${mediaSizes.tabletL}) {
+    gap: 4px;
+    width: calc(100% - 92px);
   }
 `;
 
@@ -172,9 +233,21 @@ export const StickyIMGThumb = styled.div`
   height: 108px;
   border-radius: 8px;
   overflow: hidden;
-  @media screen and (max-width: ${mediaSizes.mobileL}) {
+  @media screen and (max-width: ${mediaSizes.tabletS}) {
     width: 64px;
     height: 64px;
+  }
+  @media screen and (max-width: ${mediaSizes.tablet}) {
+    width: 72px;
+    height: 72px;
+  }
+  @media screen and (max-width: ${mediaSizes.tabletL}) {
+    width: 80px;
+    height: 80px;
+  }
+  @media screen and (max-width: ${mediaSizes.desktopS}) {
+    width: 92px;
+    height: 92px;
   }
 `;
 
@@ -184,8 +257,12 @@ export const StickyContent = styled.div`
   height: fit-content;
   gap: 16px;
   padding-bottom: 32px;
-  @media screen and (max-width: ${mediaSizes.mobileL}) {
+  @media screen and (max-width: ${mediaSizes.tabletS}) {
     width: 100%;
+    flex-direction: column;
+  }
+  @media screen and (max-width: ${mediaSizes.tablet}) {
+    width: 60%;
     flex-direction: column;
   }
 `;
@@ -200,8 +277,12 @@ export const ContentBox = styled.div`
   border-radius: 16px;
   text-align: left;
   height: fit-content;
-  @media screen and (max-width: ${mediaSizes.mobileL}) {
+  @media screen and (max-width: ${mediaSizes.tablet}) {
     width: 100%;
+    padding: 0 12px;
+  }
+  @media screen and (max-width: ${mediaSizes.tabletL}) {
+    padding: 0 16px;
   }
 `;
 
@@ -223,8 +304,26 @@ export const ContentBoxWhite = styled.div`
       flex-direction: column;
       align-items: center;
     }
+    @media screen and (max-width: ${mediaSizes.tablet}) {
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: ${mediaSizes.tabletL}) {
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: ${mediaSizes.tabletL}) {
+      padding: 4px;
+      gap: 8px;
+    }
+    @media screen and (min-width: ${mediaSizes.desktopS}) {
+      padding: 8px;
+      gap: 12px;
+    }
   }
-  @media screen and (max-width: ${mediaSizes.mobileL}) {
+  @media screen and (max-width: ${mediaSizes.tablet}) {
     width: 100%;
   }
 `;
@@ -361,4 +460,21 @@ export const ScreenHole = styled.div`
   height: 12px;
   margin: 0 auto;
   margin-bottom: 32px;
+`;
+export const ProgressLine = styled.div`
+  position: relative;
+  background-color: ${(props) => props.theme.colors.BG_Secondary};
+  height: 8px;
+  width: 100%;
+  border-radius: 4px;
+`;
+
+export const ProgressLineFill = styled.div`
+  position: absolute;
+  background-color: ${(props) => props.theme.colors.Button};
+  height: 8px;
+  width: 10%;
+  border-radius: 4px;
+  top: 0;
+  left: 0;
 `;
