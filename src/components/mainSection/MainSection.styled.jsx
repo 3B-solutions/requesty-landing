@@ -72,7 +72,7 @@ export const MainSectionTxt = styled.p`
     margin-top: 32px;
     margin-bottom: 8px;
   }
-  @media screen and (max-width: ${mediaSizes.tabletS}) {
+  @media screen and (max-width: ${mediaSizes.tablet}) {
     font-size: 14px;
   }
 `;
@@ -116,10 +116,10 @@ export const StickyElement = styled.div`
   &.secondEl {
     top: 140px;
     @media screen and (min-width: ${mediaSizes.tablet}) {
-      top: 174px;
+      top: 180px;
     }
     @media screen and (max-width: ${mediaSizes.tabletL}) {
-      top: 174px;
+      top: 180px;
     }
     @media screen and (min-width: ${mediaSizes.desktopS}) {
       top: 178px;
@@ -128,13 +128,13 @@ export const StickyElement = styled.div`
   &.thirdEl {
     top: 280px;
     @media screen and (min-width: ${mediaSizes.tablet}) {
-      top: 320px;
+      top: 300px;
     }
     @media screen and (max-width: ${mediaSizes.tabletL}) {
       top: 284px;
     }
     @media screen and (min-width: ${mediaSizes.desktopS}) {
-      top: 280px;
+      top: 296px;
     }
   }
   @media screen and (max-width: ${mediaSizes.tabletS}) {
@@ -143,7 +143,7 @@ export const StickyElement = styled.div`
     margin-bottom: 12px;
     padding-right: 4px;
   }
-  @media screen and (max-width: ${mediaSizes.tablet}) {
+  @media screen and (min-width: ${mediaSizes.tabletS}) and (max-width: ${mediaSizes.tablet}) {
     width: 40%;
     position: -webkit-sticky;
     position: sticky;
@@ -169,17 +169,15 @@ export const StickyElementTxt = styled.div`
   background-color: ${(props) => props.theme.colors.Button};
 
   @media screen and (max-width: ${mediaSizes.tabletS}) {
-    width: 160px;
+    /* width: 160px; */
     padding: 8px;
     font-size: 14px;
     line-height: 125%;
   }
-  @media screen and (max-width: ${mediaSizes.tablet}) {
-    width: 200px;
-  }
-  @media screen and (max-width: ${mediaSizes.tablet}) {
-    width: 136px;
-    padding: 12px;
+
+  @media screen and (min-width: ${mediaSizes.tabletS}) and (max-width: ${mediaSizes.tabletL}) {
+    /* width: 124px; */
+    padding: 8px;
     font-size: 14px;
     line-height: 125%;
   }
@@ -218,11 +216,11 @@ export const StickyElementBox = styled.div`
     gap: 4px;
     width: calc(100% - 72px);
   }
-  @media screen and (max-width: ${mediaSizes.tablet}) {
+  @media screen and (min-width: ${mediaSizes.tabletS}) and (max-width: ${mediaSizes.tablet}) {
     gap: 4px;
     width: calc(100% - 80px);
   }
-  @media screen and (max-width: ${mediaSizes.tabletL}) {
+  @media screen and (min-width: ${mediaSizes.tablet}) and (max-width: ${mediaSizes.tabletL}) {
     gap: 4px;
     width: calc(100% - 92px);
   }
@@ -237,15 +235,15 @@ export const StickyIMGThumb = styled.div`
     width: 64px;
     height: 64px;
   }
-  @media screen and (max-width: ${mediaSizes.tablet}) {
+  @media screen and (min-width: ${mediaSizes.tabletS}) and (max-width: ${mediaSizes.tablet}) {
     width: 72px;
     height: 72px;
   }
-  @media screen and (max-width: ${mediaSizes.tabletL}) {
+  @media screen and (min-width: ${mediaSizes.tablet}) and (max-width: ${mediaSizes.tabletL}) {
     width: 80px;
     height: 80px;
   }
-  @media screen and (max-width: ${mediaSizes.desktopS}) {
+  @media screen and (min-width: ${mediaSizes.tabletL}) and (max-width: ${mediaSizes.desktopS}) {
     width: 92px;
     height: 92px;
   }
@@ -261,7 +259,7 @@ export const StickyContent = styled.div`
     width: 100%;
     flex-direction: column;
   }
-  @media screen and (max-width: ${mediaSizes.tablet}) {
+  @media screen  and (min-width: ${mediaSizes.tabletS}) and (max-width: ${mediaSizes.tablet}) {
     width: 60%;
     flex-direction: column;
   }
@@ -281,7 +279,7 @@ export const ContentBox = styled.div`
     width: 100%;
     padding: 0 12px;
   }
-  @media screen and (max-width: ${mediaSizes.tabletL}) {
+  @media screen and (min-width: ${mediaSizes.tablet}) and (max-width: ${mediaSizes.tabletL}) {
     padding: 0 16px;
   }
 `;
@@ -304,12 +302,12 @@ export const ContentBoxWhite = styled.div`
       flex-direction: column;
       align-items: center;
     }
-    @media screen and (max-width: ${mediaSizes.tablet}) {
+    @media screen and (min-width: ${mediaSizes.mobileL}) and (max-width: ${mediaSizes.tablet}) {
       flex-direction: row;
       align-items: center;
       flex-wrap: wrap;
     }
-    @media screen and (max-width: ${mediaSizes.tabletL}) {
+    @media screen and (min-width: ${mediaSizes.tablet}) and (max-width: ${mediaSizes.tabletL}) {
       flex-direction: column;
       align-items: center;
       flex-wrap: wrap;
