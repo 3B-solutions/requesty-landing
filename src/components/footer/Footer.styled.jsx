@@ -1,9 +1,11 @@
 import styled from "@emotion/styled";
+import { mediaSizes } from "../constants/media";
+
 
 export const FooterWrapper = styled.div`
   font-family: "e-Ukraine-Regular", sans-serif;
   position: relative;
-  height: 906px;
+  max-height: 906px;
   margin: 0 auto;
   padding-top: 64px;
   padding-bottom: 32px;
@@ -24,10 +26,23 @@ export const FootImg = styled.img`
 export const FootInfo = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   justify-content: space-around;
-  gap: 364px;
+  flex-direction: column;
+  gap: 32px;
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+  }
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+    flex-direction: row;
+  }
+  @media screen and (min-width: ${mediaSizes.laptop}) {
+    
+  }
+  @media screen and (min-width: ${mediaSizes.desktopS}) {
+  }
+  @media screen and (min-width: ${mediaSizes.desktop}) {
+    gap: 364px;;
+  }
 `;
 
 export const InfoPartner = styled.div`
@@ -66,9 +81,22 @@ export const TextInfo = styled.p`
 
 export const InfoMail = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 64px;
+  gap: 8px;
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+  }
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+    
+  }
+  @media screen and (min-width: ${mediaSizes.laptop}) {
+    flex-direction: row;
+    gap: 64px;
+  }
+  @media screen and (min-width: ${mediaSizes.desktopS}) {
+  }
+  @media screen and (min-width: ${mediaSizes.desktop}) {
+  }
 `;
 
 export const TextContact = styled.p`
