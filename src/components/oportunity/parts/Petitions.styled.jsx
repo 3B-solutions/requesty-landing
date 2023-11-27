@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { mediaSizes } from "../../constants/media";
 
 export const PetitsWrapper = styled.div`
-  font-family: "e-Ukraine-Regular", sans-serif;
+font-family: "e-Ukraine-Regular", sans-serif;
   position: relative;
   margin: 0 auto;
   padding-top: 34px;
@@ -10,16 +10,38 @@ export const PetitsWrapper = styled.div`
   background: #eceef2;
   display: flex;
   flex-direction: column;
+  gap: 124px;
+  @media screen and (max-width: ${mediaSizes.mobile}) {
+    flex-direction: column;
+    border-radius: 16px;
+    align-items: center;
+    width: 95%;
+    gap: 16px;
+  }
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+    flex-direction: column;
+    border-radius: 16px;
+    align-items: center;
+    width: 95%;
+    gap: 32px;
+  }
   @media screen and (min-width: ${mediaSizes.tablet}) {
+    width: 100%;
+    align-items: center;
   }
   @media screen and (min-width: ${mediaSizes.laptop}) {
+    align-items: end;
+    padding-right: 32px;
+    flex-direction: row;
+  }
+  @media screen and (min-width: ${mediaSizes.desktopS}) {
+    padding-right: 120px;
+    gap: 100px;
   }
   @media screen and (min-width: ${mediaSizes.desktop}) {
     min-width: 1376px;
     padding-left: 32px;
     padding-right: 147px;
-    border-radius: 16px;
-    flex-direction: row;
   }
 `;
 
@@ -32,61 +54,96 @@ export const FixedText = styled.div`
   justify-content: flex-end;
   gap: 16px;
   padding-left: 30px;
-  @media screen and (min-width: ${mediaSizes.tablet}) {
+  @media screen and (max-width: ${mediaSizes.mobile}) {
+    padding-left: 0;
+    justify-content: center;
+  }
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+    padding-left: 0;
+  }
+  @media screen and (min-width: ${mediaSizes.tabletS}) {
+    padding-left: 30px;
+    align-items: center;  
   }
   @media screen and (min-width: ${mediaSizes.laptop}) {
-  }
-  @media screen and (min-width: ${mediaSizes.desktop}) {
+    align-items: flex-start;
     margin-bottom: 32px;
-    margin-right: 124px;
   }
 `;
 
 export const PetitsTitle = styled.h2`
-  color: ${(props) => props.theme.colors.Text_Main};
+color: ${(props) => props.theme.colors.Text_Main};
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: -0.96px;
   text-align: flex-start;
+  @media screen and (max-width: ${mediaSizes.mobile}) {
+    text-align: center;
+  }
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+    text-align: center;
+  }
+  @media screen and (min-width: ${mediaSizes.laptop}) {
+    text-align: start;
+  }
 `;
 
 export const PetitsTexts = styled.p`
-  color: ${(props) => props.theme.colors.Text_Main};
+color: ${(props) => props.theme.colors.Text_Main};
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.32px;
   text-align: start;
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+    text-align: center;
+  }
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+    text-align: center;
+  }
+  @media screen and (min-width: ${mediaSizes.laptop}) {
+    text-align: start;
+  }
 `;
 
 export const ScrollableContent = styled.div`
-  flex-grow: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding-top: 16.8px;
-  padding-bottom: 0px;
+flex-grow: 1;
+overflow-y: auto;
+overflow-x: hidden;
+padding-top: 16.8px;
+padding-bottom: 0px;
+width: 756px;
+min-height: 451.5px;
+max-height: 451.5px;
+flex-shrink: 0;
+border-radius: 8px 8px 0px 0px;
+border: 1px solid ${(props) => props.theme.colors.White};
+background: ${(props) => props.theme.colors.White}; /* Змінено фон на білий */
+
+&::-webkit-scrollbar {
+  width: 0.2px; /* Ширина повзунка */
+}
+
+&::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+&::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@media screen and (max-width: ${mediaSizes.mobile}) {
+  width: 95%;
+}
+@media screen and (min-width: ${mediaSizes.mobile}) {
+  width: 95%;
+}
+@media screen and (min-width: ${mediaSizes.laptop}) {
   width: 756px;
-  min-height: 451.5px;
-  max-height: 451.5px;
-  flex-shrink: 0;
-  border-radius: 8px 8px 0px 0px;
-  border: 1px solid ${(props) => props.theme.colors.White};
-  background: ${(props) => props.theme.colors.White}; /* Змінено фон на білий */
-
-  &::-webkit-scrollbar {
-    width: 0.2px; /* Ширина повзунка */
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: transparent;
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: transparent;
-  }
+}
 `;
 
 export const HeadWrap = styled.div`
@@ -95,49 +152,77 @@ export const HeadWrap = styled.div`
 `;
 
 export const LogoWrap = styled.div`
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 345px;
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+padding-right: 16px;
+@media screen and (max-width: ${mediaSizes.mobile}) {
+  flex-direction: column;
+}
+@media screen and (min-width: ${mediaSizes.mobile}) {
+  flex-direction: column;
+}
+@media screen and (min-width: ${mediaSizes.tabletS}) {
+  padding-right: 64px;
+  flex-direction: row;
+}
+@media screen and (min-width: ${mediaSizes.laptop}) {
+  padding-right: 128px;
+
+}
+@media screen and (min-width: ${mediaSizes.desktopS}) {
+  padding-right: 164px;
+}
+@media screen and (min-width: ${mediaSizes.desktop}) {
+  padding-left: 82px;
+}
 `;
 
 export const NavWrapper = styled.div`
-  display: flex;
-  gap: 33.6px;
+display: flex;
+gap: 33.6px;
+@media screen and (max-width: ${mediaSizes.mobile}) {
+  align-self: end;
+}
+@media screen and (min-width: ${mediaSizes.mobile}) {
+  align-self: end;
+}
 `;
 
 export const Nav = styled.ul`
-  font-size: 6.3px;
-  font-style: normal;
-  font-weight: 400;
-  display: flex;
-  gap: 16px;
-  line-height: 18px;
-  letter-spacing: 0.24px;
-  position: relative;
+font-size: 6.3px;
+font-style: normal;
+font-weight: 400;
+display: flex;
+gap: 16px;
+line-height: 18px;
+letter-spacing: 0.24px;
+position: relative;
 
-  &::after {
-    content: "";
-    width: 0.525px;
-    height: 21px;
-    background: #d9d9d9;
-    position: absolute;
-    right: -16.8px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
+&::after {
+  content: "";
+  width: 0.525px;
+  height: 21px;
+  background: #d9d9d9;
+  position: absolute;
+  right: -16.8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 `;
 
 export const NavSimple = styled.ul`
-  font-size: 6.3px;
-  font-style: normal;
-  font-weight: 400;
-  display: flex;
-  gap: 16px;
-  line-height: 18px;
-  letter-spacing: 0.24px;
-  position: relative;
+font-size: 6.3px;
+font-style: normal;
+font-weight: 400;
+display: flex;
+gap: 16px;
+line-height: 18px;
+letter-spacing: 0.24px;
+position: relative;
 `;
+
+// ------------------------------
 
 export const MainInfo = styled.div`
   margin-top: 48px;
@@ -146,21 +231,50 @@ export const MainInfo = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 320px;
+  justify-content: space-between;
+  padding-right: 64px;
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+    padding-right: 130px;
+  }
+  @media screen and (min-width: ${mediaSizes.laptop}) {
+    padding-right: 200px;
+  }
+  @media screen and (min-width: ${mediaSizes.desktopS}) {
+    padding-right: 250px;
+  }
+  @media screen and (min-width: ${mediaSizes.desktop}) {
+    padding-left: 82px;
+  }
 `;
 
 export const TitleInfo = styled.div`
+align-items: flex-start;
+justify-content: flex-start;
+@media screen and (min-width: ${mediaSizes.mobile}) {
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: ${mediaSizes.tablet}) {
   align-items: flex-start;
   justify-content: flex-start;
+}
 `;
 
 export const TitlePetits = styled.h2`
-  color: ${(props) => props.theme.colors.Text_Main};
-  font-size: 25.2px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 44.16px;
-  letter-spacing: -0.96px;
+color: ${(props) => props.theme.colors.Text_Main};
+font-size: 25.2px;
+font-style: normal;
+font-weight: 400;
+line-height: 44.16px;
+letter-spacing: -0.96px;
+@media screen and (min-width: ${mediaSizes.mobile}) {
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: ${mediaSizes.tablet}) {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
 `;
 
 export const TextInfo = styled.div`

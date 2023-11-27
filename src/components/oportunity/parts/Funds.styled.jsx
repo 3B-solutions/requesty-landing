@@ -10,16 +10,38 @@ export const FundsWrapper = styled.div`
   background: #eceef2;
   display: flex;
   flex-direction: column;
+  gap: 124px;
+  @media screen and (max-width: ${mediaSizes.mobile}) {
+    flex-direction: column;
+    border-radius: 16px;
+    align-items: center;
+    width: 95%;
+    gap: 16px;
+  }
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+    flex-direction: column;
+    border-radius: 16px;
+    align-items: center;
+    width: 95%;
+    gap: 32px;
+  }
   @media screen and (min-width: ${mediaSizes.tablet}) {
+    width: 100%;
+    align-items: center;
   }
   @media screen and (min-width: ${mediaSizes.laptop}) {
+    align-items: end;
+    padding-right: 32px;
+    flex-direction: row;
+  }
+  @media screen and (min-width: ${mediaSizes.desktopS}) {
+    padding-right: 120px;
+    gap: 100px;
   }
   @media screen and (min-width: ${mediaSizes.desktop}) {
     min-width: 1376px;
     padding-left: 32px;
     padding-right: 147px;
-    border-radius: 16px;
-    flex-direction: row;
   }
 `;
 
@@ -32,13 +54,20 @@ export const FixedText = styled.div`
   justify-content: flex-end;
   gap: 16px;
   padding-left: 30px;
-  @media screen and (min-width: ${mediaSizes.tablet}) {
+  @media screen and (max-width: ${mediaSizes.mobile}) {
+    padding-left: 0;
+    justify-content: center;
+  }
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+    padding-left: 0;
+  }
+  @media screen and (min-width: ${mediaSizes.tabletS}) {
+    padding-left: 30px;
+    align-items: center;  
   }
   @media screen and (min-width: ${mediaSizes.laptop}) {
-  }
-  @media screen and (min-width: ${mediaSizes.desktop}) {
+    align-items: flex-start;
     margin-bottom: 32px;
-    margin-right: 124px;
   }
 `;
 
@@ -50,6 +79,18 @@ export const FundsTitle = styled.h2`
   line-height: 28px;
   letter-spacing: -0.96px;
   text-align: flex-start;
+  @media screen and (max-width: ${mediaSizes.mobile}) {
+    text-align: center;
+  }
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+    text-align: center;
+  }
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+    text-align: center;
+  }
+  @media screen and (min-width: ${mediaSizes.laptop}) {
+    text-align: start;
+  }
 `;
 
 export const FundsTexts = styled.p`
@@ -60,6 +101,15 @@ export const FundsTexts = styled.p`
   line-height: 24px;
   letter-spacing: -0.32px;
   text-align: start;
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+    text-align: center;
+  }
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+    text-align: center;
+  }
+  @media screen and (min-width: ${mediaSizes.laptop}) {
+    text-align: start;
+  }
 `;
 
 export const ScrollableContent = styled.div`
@@ -87,6 +137,16 @@ export const ScrollableContent = styled.div`
   &::-webkit-scrollbar-track {
     background-color: transparent;
   }
+
+  @media screen and (max-width: ${mediaSizes.mobile}) {
+    width: 95%;
+  }
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+    width: 95%;
+  }
+  @media screen and (min-width: ${mediaSizes.laptop}) {
+    width: 756px;
+  }
 `;
 
 export const HeadWrap = styled.div`
@@ -94,16 +154,44 @@ export const HeadWrap = styled.div`
   padding-right: 3.2px;
 `;
 
+// -----------------------------
+
 export const LogoWrap = styled.div`
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
-  gap: 345px;
+  justify-content: space-between;
+  padding-right: 16px;
+  @media screen and (max-width: ${mediaSizes.mobile}) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: ${mediaSizes.tabletS}) {
+    padding-right: 64px;
+    flex-direction: row;
+  }
+  @media screen and (min-width: ${mediaSizes.laptop}) {
+    padding-right: 128px;
+
+  }
+  @media screen and (min-width: ${mediaSizes.desktopS}) {
+    padding-right: 164px;
+  }
+  @media screen and (min-width: ${mediaSizes.desktop}) {
+    padding-left: 82px;
+  }
 `;
 
 export const NavWrapper = styled.div`
   display: flex;
   gap: 33.6px;
+  @media screen and (max-width: ${mediaSizes.mobile}) {
+    align-self: end;
+  }
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+    align-self: end;
+  }
 `;
 
 export const Nav = styled.ul`
@@ -139,6 +227,8 @@ export const NavSimple = styled.ul`
   position: relative;
 `;
 
+// ------------------------------
+
 export const MainInfo = styled.div`
   margin-top: 48px;
   margin-bottom: 68px;
@@ -146,12 +236,33 @@ export const MainInfo = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 320px;
+  justify-content: space-between;
+  padding-right: 64px;
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+    padding-right: 130px;
+  }
+  @media screen and (min-width: ${mediaSizes.laptop}) {
+    padding-right: 200px;
+  }
+  @media screen and (min-width: ${mediaSizes.desktopS}) {
+    padding-right: 250px;
+  }
+  @media screen and (min-width: ${mediaSizes.desktop}) {
+    padding-left: 82px;
+  }
 `;
 
 export const TitleInfo = styled.div`
   align-items: flex-start;
   justify-content: flex-start;
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 `;
 
 export const TitleFunds = styled.h2`
@@ -161,6 +272,14 @@ export const TitleFunds = styled.h2`
   font-weight: 400;
   line-height: 44.16px;
   letter-spacing: -0.96px;
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+    align-items: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 `;
 
 export const TextInfo = styled.div`

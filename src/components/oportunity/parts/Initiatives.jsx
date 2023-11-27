@@ -33,7 +33,7 @@ const Inits = () => {
     <>
       <InitsWrapper>
         <FixedText>
-          <InitsTitle>Ініціативи</InitsTitle>
+          <InitsTitle>Iніціативи</InitsTitle>
           <InitsTexts>
             Волонтери не лише шукають, але й створюють щось. Ми дамо їм
             можливість розповісти про себе.
@@ -58,11 +58,11 @@ const Inits = () => {
             </LogoWrap>
             <MainInfo>
               <TitleInfo>
-                <TitleInits>Ініціативи</TitleInits>
+                <TitleInits>Iніціативи</TitleInits>
               </TitleInfo>
               <TextInfo>
                 <TextsParag>
-                  Нехай всі дізнаються чим ви допомагаєте нашим воїнам.
+                  Нехай всі дізнаються чим ви допомагаєте <br/> нашим воїнам.
                 </TextsParag>
                 <ButtonInfo>Розмістити ініціативу</ButtonInfo>
               </TextInfo>
