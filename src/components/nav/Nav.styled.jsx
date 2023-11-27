@@ -3,7 +3,8 @@ import { mediaSizes } from "../constants/media";
 
 export const NavStyled = styled.div`
   display: flex;
-  gap: 32px;
+  align-items: center;
+  gap: 15px;
   font-size: 8px;
   font-style: normal;
   font-weight: 400;
@@ -12,6 +13,7 @@ export const NavStyled = styled.div`
     color: ${(props) => props.theme.colors.Text_Main};
   }
   @media screen and (min-width: ${mediaSizes.tablet}) {
+    gap: 32px;
     font-size: 10px;
     line-height: 18px;
   }

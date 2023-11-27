@@ -13,6 +13,9 @@ const Nav = () => {
       <Link to="oportunity" smooth duration={500} style={{ cursor: "pointer" }}>
         Інші можливості
       </Link>
+      <Link to="footer" smooth duration={500} style={{ cursor: "pointer" }}>
+        Контакти
+      </Link>
     </NavStyled>
   );
 };
