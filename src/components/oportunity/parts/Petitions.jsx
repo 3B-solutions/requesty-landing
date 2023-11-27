@@ -26,6 +26,7 @@ import {
 } from "./Petitions.styled";
 import logo from "../../img/LOGO green.svg";
 import { Button } from "components/styled/Button.styled";
+import { StyledFundImage } from "./Funds.styled";
 
 const Petitions = () => {
   return (
@@ -41,7 +42,7 @@ const Petitions = () => {
         <ScrollableContent>
           <HeadWrap>
             <LogoWrap>
-              <img src={logo} alt="logo" height={18} width={93} />
+            <StyledFundImage src={logo} alt="logo" />
               <NavWrapper>
                 <Nav>
                   <li>Збори</li>
