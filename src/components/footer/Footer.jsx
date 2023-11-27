@@ -15,7 +15,7 @@ import FooterImg from "../img/FooterImg.png";
 const Footer = () => {
   return (
     <>
-      <FooterWrapper>
+      <FooterWrapper id="footer">
         <FootImg src={FooterImg} />
         <FootInfo>
           <InfoPartner>
