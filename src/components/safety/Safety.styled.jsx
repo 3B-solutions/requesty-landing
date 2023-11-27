@@ -6,12 +6,22 @@ export const SafetyWrapper = styled.div`
   min-height: 611px;
   margin: 0 auto;
   display: flex;
-  padding: 64px 32px 96px 32px;
+  padding: 64px 16px 96px 16px;
   flex-direction: column;
   align-items: center;
   gap: 64px;
   background: ${(props) => props.theme.colors.White};
-`;
+  @media screen and (max-width: ${mediaSizes.tablet}) {
+    padding: 24px 8px;
+    position: static;
+  }
+  @media screen and (max-width: ${mediaSizes.tabletL}) {
+    padding: 32px 16px;
+    position: -webkit-sticky;
+    top: -72px;
+    position: sticky;
+  }
+  `;
 
 export const SafetyTitle = styled.h2`
   color: ${(props) => props.theme.colors.Text_Main};
@@ -40,7 +50,7 @@ export const DiyaWrap = styled.div`
   display: flex;
   width: 332px;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   gap: 32px;
   border-radius: 16px;
 `;
