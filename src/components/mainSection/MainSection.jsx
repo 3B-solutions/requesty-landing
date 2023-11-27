@@ -7,6 +7,7 @@ import {
   MainSectionTitle,
   MainWrapper,
   StickyContainer,
+  StickyElMobile,
   StickyElement,
   StickyElementBox,
   StickyElementTxt,
@@ -48,7 +49,7 @@ const MainSection = () => {
           </StickyElementWrapper>
         </StickyElement>
         <MakingRequest />
-        <StickyElement>
+        <StickyElement className="desktop">
           <p> </p>
         </StickyElement>
         <FoundVolunteer />
@@ -90,7 +91,25 @@ const MainSection = () => {
           </StickyElementWrapper>
         </StickyElement>
         <RequestDone />
-        <StickyElement>
+        <StickyElMobile className="thirdEl">
+          <StickyElementWrapper>
+            <StickyIMGThumb>
+              <img
+                src={Donater_Small}
+                alt="add"
+                width={"100%"}
+                height={"100%"}
+              />
+            </StickyIMGThumb>
+            <StickyElementBox>
+              <InfoTxt>Донатер</InfoTxt>
+              <StickyElementTxt>
+                Я підтримаю збір донатом та поширю!
+              </StickyElementTxt>
+            </StickyElementBox>
+          </StickyElementWrapper>
+        </StickyElMobile>
+        <StickyElement className="desktop">
           <p> </p>
         </StickyElement>
         <ScreenAdv />
