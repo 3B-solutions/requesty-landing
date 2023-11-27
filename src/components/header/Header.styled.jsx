@@ -6,6 +6,7 @@ export const HeaderStyled = styled.div`
   justify-content: space-between;
   padding: 10px;
   width: 100%;
+  max-width: 1920px;
   background-color: ${(props) => props.theme.colors.BG_Secondary};
 
   @media screen and (min-width: ${mediaSizes.tablet}) {
