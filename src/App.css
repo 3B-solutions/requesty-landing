@@ -27,28 +27,37 @@
   flex-direction: column;
   top: 40%;
   left: 50%;
-  width: 480px;
+  width: 350px;
   transform: translate(-50%, -50%);
-  background-color: #ECEEF2;
+  background-color: #eceef2;
   padding: 20px;
   border-radius: 8px;
   border: none;
   align-content: center;
+
+  @media screen and (min-width:768px) {
+    width: 480px;
+    align-content: center;
+  }
 }
 
 .ReactModal__Content p {
   font-family: "e-Ukraine-Regular", sans-serif;
   margin-bottom: 10px;
   padding: 10px;
+  text-align: center;
 
+  @media screen and (min-width:768px) {
+    text-align: start;
+  }
 }
 
 .ReactModal__Content button {
   font-family: "e-Ukraine-Regular", sans-serif;
   padding: 10px 30px;
   cursor: pointer;
-  background-color: #0D0D0D;
-  color: #FAFBFC;
+  background-color: #0d0d0d;
+  color: #fafbfc;
   border: none;
   border-radius: 5px;
   margin: auto;
@@ -56,7 +65,6 @@
 }
 
 .ReactModal__Content button:hover {
-  background-color: #97ABC1;
-  color: #0D0D0D;
-
+  background-color: #97abc1;
+  color: #0d0d0d;
 }
