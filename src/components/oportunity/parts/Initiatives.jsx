@@ -27,13 +27,14 @@ import {
 } from "./Initiatives.styled";
 import logo from "../../img/LOGO green.svg";
 import { Button } from "components/styled/Button.styled";
+import { StyledFundImage } from "./Funds.styled";
 
 const Inits = () => {
   return (
     <>
       <InitsWrapper>
         <FixedText>
-          <InitsTitle>Ініціативи</InitsTitle>
+          <InitsTitle>Iніціативи</InitsTitle>
           <InitsTexts>
             Волонтери не лише шукають, але й створюють щось. Ми дамо їм
             можливість розповісти про себе.
@@ -42,7 +43,7 @@ const Inits = () => {
         <ScrollableContent>
           <HeadWrap>
             <LogoWrap>
-              <img src={logo} alt="logo" height={18} width={93} />
+              <StyledFundImage src={logo} alt="logo"/>
               <NavWrapper>
                 <Nav>
                   <li>Збори</li>
@@ -58,11 +59,11 @@ const Inits = () => {
             </LogoWrap>
             <MainInfo>
               <TitleInfo>
-                <TitleInits>Ініціативи</TitleInits>
+                <TitleInits>Iніціативи</TitleInits>
               </TitleInfo>
               <TextInfo>
                 <TextsParag>
-                  Нехай всі дізнаються чим ви допомагаєте нашим воїнам.
+                  Нехай всі дізнаються чим ви допомагаєте <br/> нашим воїнам.
                 </TextsParag>
                 <ButtonInfo>Розмістити ініціативу</ButtonInfo>
               </TextInfo>

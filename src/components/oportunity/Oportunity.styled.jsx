@@ -4,7 +4,6 @@ import { mediaSizes } from "../constants/media";
 export const SectionWrapper = styled.div`
   font-family: "e-Ukraine-Regular", sans-serif;
   position: relative;
-  min-height: 1793px;
   margin: 0 auto;
   padding-top: 64px;
   padding-bottom: 96px;
@@ -13,13 +12,14 @@ export const SectionWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 64px;
-  @media screen and (min-width: ${mediaSizes.tablet}) {
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+    padding-right: 0;
+    padding-left: 0;
   }
-  @media screen and (min-width: ${mediaSizes.laptop}) {
-  }
-  @media screen and (min-width: ${mediaSizes.desktop}) {
-    padding-left: 32px;
+  @media screen and (min-width: ${mediaSizes.tabletS}) {
+    gap: 128px;
     padding-right: 32px;
+    padding-left: 32px;
   }
 `;
 
