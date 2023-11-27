@@ -3,25 +3,22 @@ import { mediaSizes } from "../constants/media";
 
 export const SafetyWrapper = styled.div`
   font-family: "e-Ukraine-Regular", sans-serif;
-  min-height: 611px;
   margin: 0 auto;
   display: flex;
-  padding: 64px 16px 96px 16px;
+  padding: 64px 32px 96px 32px;
   flex-direction: column;
   align-items: center;
   gap: 64px;
   background: ${(props) => props.theme.colors.White};
+
   @media screen and (max-width: ${mediaSizes.tablet}) {
     padding: 24px 8px;
-    position: static;
   }
-  @media screen and (max-width: ${mediaSizes.tabletL}) {
+
+  @media screen and (max-width: ${mediaSizes.laptop}) {
     padding: 32px 16px;
-    position: -webkit-sticky;
-    top: -72px;
-    position: sticky;
   }
-  `;
+`;
 
 export const SafetyTitle = styled.h2`
   color: ${(props) => props.theme.colors.Text_Main};
@@ -33,55 +30,73 @@ export const SafetyTitle = styled.h2`
 `;
 
 export const InfoWrapper = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 16px;
-  @media screen and (min-width: ${mediaSizes.tablet}) {
-  }
-  @media screen and (min-width: ${mediaSizes.laptop}) {
+
+  @media screen and (min-width: ${mediaSizes.desktopS}) {
     flex-direction: row;
-  }
-  @media screen and (min-width: ${mediaSizes.desktop}) {
+    justify-content: space-between;
   }
 `;
 
 export const DiyaWrap = styled.div`
   display: flex;
-  width: 332px;
   flex-direction: column;
   align-items: start;
   gap: 32px;
   border-radius: 16px;
+
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: ${mediaSizes.desktopS}) {
+    width: 30%;
+    align-items: start;
+  }
 `;
 
 export const DiyaDescr = styled.div`
   display: flex;
-  width: 268px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: start;
   gap: 16px;
+
+  @media screen and (min-width: ${mediaSizes.mobile}) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: ${mediaSizes.desktopS}) {
+    align-items: start;
+  }
 `;
 
 export const UserWrap = styled.div`
   display: flex;
-  width: 332px;
   padding: 32px;
+  width: 332px;
+  heigth: 343px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 32px;
   border-radius: 16px;
   background: ${(props) => props.theme.colors.BG_Secondary};
+
 `;
 
 export const ImgWrap = styled.div`
   display: flex;
-  width: 332px;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 8px;
+
   & img {
     border-radius: 8px;
+    max-width: 100%;
+    height: auto;
   }
 `;
 
