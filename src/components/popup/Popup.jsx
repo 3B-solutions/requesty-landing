@@ -21,7 +21,7 @@ const Popup = () => {
         Вітаємо на сайті презентації Requesty! Ви зможете користуватися
         платформою вже зовсім скоро.
       </p>
-      <button onClick={closeModal}>Закрити</button>
+      <button onClick={closeModal}>Гаразд</button>
     </Modal>
   );
 };
