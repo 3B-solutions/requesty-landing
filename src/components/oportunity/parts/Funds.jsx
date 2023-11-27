@@ -23,6 +23,7 @@ import {
   NameFund,
   ShortDescr,
   StyledFund,
+  StyledFundImage,
 } from "./Funds.styled";
 import logo from "../../img/LOGO green.svg";
 import fund from "../../img/fundImg.jpg";
@@ -41,7 +42,7 @@ const Funds = () => {
         <ScrollableContent>
           <HeadWrap>
             <LogoWrap>
-              <img src={logo} alt="logo" height={18} width={93} />
+              <StyledFundImage src={logo} alt="logo" />
               <NavWrapper>
                 <Nav>
                   <li>Збори</li>

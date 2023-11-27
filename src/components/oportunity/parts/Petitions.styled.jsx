@@ -164,6 +164,7 @@ padding-right: 16px;
 }
 @media screen and (min-width: ${mediaSizes.tabletS}) {
   padding-right: 64px;
+  align-items: center;
   flex-direction: row;
 }
 @media screen and (min-width: ${mediaSizes.laptop}) {

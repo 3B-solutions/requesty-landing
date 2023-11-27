@@ -169,6 +169,7 @@ export const LogoWrap = styled.div`
   }
   @media screen and (min-width: ${mediaSizes.tabletS}) {
     padding-right: 64px;
+    align-items: center;
     flex-direction: row;
   }
   @media screen and (min-width: ${mediaSizes.laptop}) {
@@ -180,6 +181,21 @@ export const LogoWrap = styled.div`
   }
   @media screen and (min-width: ${mediaSizes.desktop}) {
     padding-left: 82px;
+  }
+`;
+
+export const StyledFundImage = styled.img`
+  max-width: 100%;
+  height: auto;
+
+  @media screen and (max-width: ${mediaSizes.tablet}) {
+    height: 10px;
+    width: 50px;
+  }
+
+  @media screen and (min-width: ${mediaSizes.tablet}) {
+    height: 11px;
+    width: 63px;
   }
 `;
 
