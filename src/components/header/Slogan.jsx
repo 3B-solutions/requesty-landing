@@ -1,4 +1,5 @@
 import { SloganStyled, Title, Text } from "./Header.styled";
+
 const Slogan = () => {
   return (
     <SloganStyled>

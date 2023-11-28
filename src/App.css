@@ -39,7 +39,12 @@
     width: 480px;
     align-content: center;
   }
+
+  &:focus-visible {
+    outline: 1px solid #eceef2;
+  }
 }
+
 
 .ReactModal__Content p {
   font-family: "e-Ukraine-Regular", sans-serif;

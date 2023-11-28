@@ -2,6 +2,8 @@ import styled from "@emotion/styled";
 import { mediaSizes } from "../constants/media";
 
 export const HeaderStyled = styled.div`
+  position: fixed;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   padding: 10px;
