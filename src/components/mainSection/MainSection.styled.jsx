@@ -126,6 +126,9 @@ export const StickyElement = styled.div`
     }
   }
   &.thirdEl {
+    @media screen and (max-width: ${mediaSizes.tabletS}) {
+      display: none; /* Не відображається на мобільних пристроях */
+    }
     top: 280px;
     @media screen and (min-width: ${mediaSizes.tablet}) {
       top: 300px;
@@ -137,7 +140,10 @@ export const StickyElement = styled.div`
       top: 296px;
     }
   }
+
   @media screen and (max-width: ${mediaSizes.tabletS}) {
+    border-top: 1px solid ${(props) => props.theme.colors.Button};
+    padding-top: 8px;
     width: 100%;
     position: static;
     margin-bottom: 12px;
@@ -149,6 +155,25 @@ export const StickyElement = styled.div`
     position: sticky;
     margin-bottom: 12px;
   }
+  &.desktop {
+    @media screen and (max-width: ${mediaSizes.tabletS}) {
+      display: none; /* Не відображається на мобільних пристроях */
+    }
+  }
+`;
+
+export const StickyElMobile = styled.div`
+  @media screen and (max-width: ${mediaSizes.tabletS}) {
+    border-top: 1px solid ${(props) => props.theme.colors.Button};
+    padding-top: 8px;
+    display: block;
+    width: 100%;
+    position: static;
+    margin-bottom: 12px;
+    padding-right: 4px;
+    font-size: 20px;
+  }
+  display: none;
 `;
 
 export const StickyElementTxt = styled.div`
@@ -259,7 +284,7 @@ export const StickyContent = styled.div`
     width: 100%;
     flex-direction: column;
   }
-  @media screen  and (min-width: ${mediaSizes.tabletS}) and (max-width: ${mediaSizes.tablet}) {
+  @media screen and (min-width: ${mediaSizes.tabletS}) and (max-width: ${mediaSizes.tablet}) {
     width: 60%;
     flex-direction: column;
   }
@@ -475,4 +500,20 @@ export const ProgressLineFill = styled.div`
   border-radius: 4px;
   top: 0;
   left: 0;
+`;
+
+export const MobileStickyElementBox = styled.div`
+  display: none;
+
+  @media screen and (max-width: ${mediaSizes.tabletS}) {
+    display: block; /* Відображається на мобільних пристроях */
+  }
+`;
+
+export const TabletDesktopDiv = styled.div`
+  display: block; /* По замовчуванню відображається на більших екранах */
+
+  @media screen and (max-width: ${mediaSizes.tabletS}) {
+    display: none; /* Не відображається на мобільних пристроях */
+  }
 `;
