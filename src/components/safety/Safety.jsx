@@ -37,8 +37,8 @@ const Safety = () => {
             <UserDescr>Військовий</UserDescr>
           </ImgWrap>
           <DiyaDescr>
-            <TitleFunds>Перевіраємо</TitleFunds>
-            <FundsTexts>Підвтерджємо актуальність запиту та особу</FundsTexts>
+            <TitleFunds>Перевіряємо</TitleFunds>
+            <FundsTexts>Підтверджуємо актуальність запиту та особу</FundsTexts>
           </DiyaDescr>
         </UserWrap>
         <UserWrap>
@@ -48,7 +48,7 @@ const Safety = () => {
           </ImgWrap>
           <DiyaDescr>
             <TitleFunds>Модеруємо</TitleFunds>
-            <FundsTexts>Ознайомлюємось з волонтерською діяльністью</FundsTexts>
+            <FundsTexts>Ознайомлюємось з волонтерською діяльністю</FundsTexts>
           </DiyaDescr>
         </UserWrap>
         <UserWrap>
@@ -58,7 +58,7 @@ const Safety = () => {
           </ImgWrap>
           <DiyaDescr>
             <TitleFunds>Звітуємо</TitleFunds>
-            <FundsTexts>Слідкуємо за коректністью звітування</FundsTexts>
+            <FundsTexts>Слідкуємо, щоб звітність була прозора</FundsTexts>
           </DiyaDescr>
         </UserWrap>
       </InfoWrapper>

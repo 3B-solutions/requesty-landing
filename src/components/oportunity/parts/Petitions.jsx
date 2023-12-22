@@ -35,14 +35,14 @@ const Petitions = () => {
         <FixedText>
           <PetitsTitle>Петиції</PetitsTitle>
           <PetitsTexts>
-            В державі приймаются важливі петиції, які впливають на військовий
-            устрій, і кожен не байдужий має знати про них.
+            Петиції – важливий інструмент для впливу на державу в багатьох
+            сферах. На нашій платформі зібрані петиції повязані з військовими.
           </PetitsTexts>
         </FixedText>
         <ScrollableContent>
           <HeadWrap>
             <LogoWrap>
-            <StyledFundImage src={logo} alt="logo" />
+              <StyledFundImage src={logo} alt="logo" />
               <NavWrapper>
                 <Nav>
                   <li>Збори</li>
